@@ -1,1 +1,10 @@
 project_id = "sgzizfesuzrugpkqmxdf"
+
+[functions.mexc-market-data]
+verify_jwt = false
+
+[functions.mexc-trade]
+verify_jwt = false
+
+[functions.deepseek-analysis]
+verify_jwt = false
