@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TrendingUp, TrendingDown, Activity } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { useQuery } from "@tanstack/react-query";
 
 const TradingPanel = () => {
   const [symbol, setSymbol] = useState("BTC/USDT");
@@ -16,6 +17,20 @@ const TradingPanel = () => {
   const [orderType, setOrderType] = useState("market");
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
+
+  const { data: marketData } = useQuery({
+    queryKey: ['market-data'],
+    queryFn: async () => {
+      const { data, error } = await supabase.functions.invoke('mexc-market-data');
+      if (error) throw error;
+      return data;
+    },
+    refetchInterval: 10000,
+  });
+
+  const currentSymbolData = marketData?.symbols?.find(
+    (s: any) => s.symbol === symbol
+  );
 
   const handleTrade = async (side: "buy" | "sell") => {
     if (!amount || !symbol) {
@@ -205,23 +220,29 @@ const TradingPanel = () => {
 
         <div className="space-y-4">
           <Card className="p-6 bg-card/50 backdrop-blur-sm border-border">
-            <h3 className="text-lg font-bold mb-4">Market Info</h3>
+            <h3 className="text-lg font-bold mb-4">Market Info - {symbol}</h3>
             <div className="space-y-3">
               <div className="flex justify-between">
+                <span className="text-muted-foreground">Current Price</span>
+                <span className="font-semibold">${currentSymbolData?.price || "Loading..."}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">24h Change</span>
+                <span className={`font-semibold ${currentSymbolData?.change?.startsWith("-") ? "text-danger" : "text-success"}`}>
+                  {currentSymbolData?.changePercent || "Loading..."}
+                </span>
+              </div>
+              <div className="flex justify-between">
                 <span className="text-muted-foreground">24h High</span>
-                <span className="font-semibold text-success">$44,250.00</span>
+                <span className="font-semibold text-success">${currentSymbolData?.high || "Loading..."}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">24h Low</span>
-                <span className="font-semibold text-danger">$42,100.00</span>
+                <span className="font-semibold text-danger">${currentSymbolData?.low || "Loading..."}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">24h Volume</span>
-                <span className="font-semibold">1,234.56 BTC</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Market Cap</span>
-                <span className="font-semibold">$845.2B</span>
+                <span className="font-semibold">{currentSymbolData?.volume ? parseFloat(currentSymbolData.volume).toLocaleString() : "Loading..."}</span>
               </div>
             </div>
           </Card>
