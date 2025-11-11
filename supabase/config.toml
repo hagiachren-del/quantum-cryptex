@@ -8,3 +8,6 @@ verify_jwt = false
 
 [functions.deepseek-analysis]
 verify_jwt = false
+
+[functions.mexc-account]
+verify_jwt = false
