@@ -11,3 +11,6 @@ verify_jwt = false
 
 [functions.mexc-account]
 verify_jwt = false
+
+[functions.ai-trader]
+verify_jwt = false

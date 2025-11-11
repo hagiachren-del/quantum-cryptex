@@ -5,7 +5,8 @@ import MarketOverview from "@/components/trading/MarketOverview";
 import AIAnalysis from "@/components/trading/AIAnalysis";
 import TradingPanel from "@/components/trading/TradingPanel";
 import Portfolio from "@/components/trading/Portfolio";
-import { Activity, Brain, TrendingUp, Wallet } from "lucide-react";
+import AITrader from "@/components/trading/AITrader";
+import { Activity, Brain, TrendingUp, Wallet, Bot } from "lucide-react";
 
 const Index = () => {
   return (
@@ -28,7 +29,7 @@ const Index = () => {
 
       <main className="container mx-auto px-4 py-6">
         <Tabs defaultValue="overview" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4 lg:w-auto lg:inline-grid bg-card/50 backdrop-blur-sm">
+          <TabsList className="grid w-full grid-cols-5 lg:w-auto lg:inline-grid bg-card/50 backdrop-blur-sm">
             <TabsTrigger value="overview" className="gap-2">
               <TrendingUp className="h-4 w-4" />
               <span className="hidden sm:inline">Market</span>
@@ -36,6 +37,10 @@ const Index = () => {
             <TabsTrigger value="ai" className="gap-2">
               <Brain className="h-4 w-4" />
               <span className="hidden sm:inline">AI Analysis</span>
+            </TabsTrigger>
+            <TabsTrigger value="ai-trader" className="gap-2">
+              <Bot className="h-4 w-4" />
+              <span className="hidden sm:inline">AI Trader</span>
             </TabsTrigger>
             <TabsTrigger value="trade" className="gap-2">
               <Activity className="h-4 w-4" />
@@ -53,6 +58,10 @@ const Index = () => {
 
           <TabsContent value="ai" className="space-y-6">
             <AIAnalysis />
+          </TabsContent>
+
+          <TabsContent value="ai-trader" className="space-y-6">
+            <AITrader />
           </TabsContent>
 
           <TabsContent value="trade" className="space-y-6">
