@@ -3,10 +3,11 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { Brain, TrendingUp, TrendingDown, Pause, Play, AlertCircle } from "lucide-react";
+import { Brain, TrendingUp, TrendingDown, Pause, Play, AlertCircle, DollarSign, Activity, Target } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 interface AIDecision {
   action: 'buy' | 'sell' | 'hold';
@@ -15,6 +16,11 @@ interface AIDecision {
   amount: number;
   reasoning: string;
   sentiment: string;
+  technicals?: {
+    pricePosition: number;
+    volatility: number;
+    volumeStrength: number;
+  };
 }
 
 interface TradeLog {
@@ -24,6 +30,14 @@ interface TradeLog {
   message?: string;
 }
 
+interface PerformanceMetrics {
+  totalPnL: number;
+  winRate: number;
+  totalTrades: number;
+  executedTrades: number;
+  avgTradeSize: number;
+}
+
 const AITrader = () => {
   const [isEnabled, setIsEnabled] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -31,7 +45,67 @@ const AITrader = () => {
   const [currentDecision, setCurrentDecision] = useState<AIDecision | null>(null);
   const [tradeLogs, setTradeLogs] = useState<TradeLog[]>([]);
   const [marketData, setMarketData] = useState<any[]>([]);
+  const [performance, setPerformance] = useState<PerformanceMetrics>({
+    totalPnL: 0,
+    winRate: 0,
+    totalTrades: 0,
+    executedTrades: 0,
+    avgTradeSize: 0
+  });
+  const [pnlHistory, setPnlHistory] = useState<any[]>([]);
   const { toast } = useToast();
+
+  useEffect(() => {
+    loadTradeHistory();
+  }, []);
+
+  const loadTradeHistory = async () => {
+    const { data } = await supabase
+      .from('trade_history')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(50);
+    
+    if (data) {
+      // Calculate performance metrics
+      const executed = data.filter(t => t.executed);
+      const totalPnL = executed.reduce((sum, t) => sum + (t.pnl || 0), 0);
+      const wins = executed.filter(t => (t.pnl || 0) > 0).length;
+      const winRate = executed.length > 0 ? (wins / executed.length) * 100 : 0;
+      const avgSize = executed.length > 0 
+        ? executed.reduce((sum, t) => sum + t.amount, 0) / executed.length 
+        : 0;
+
+      setPerformance({
+        totalPnL,
+        winRate,
+        totalTrades: data.length,
+        executedTrades: executed.length,
+        avgTradeSize: avgSize
+      });
+
+      // Create PnL timeline
+      let runningPnL = 0;
+      const timeline = executed.reverse().map(t => {
+        runningPnL += t.pnl || 0;
+        return {
+          time: new Date(t.created_at).toLocaleTimeString(),
+          pnl: runningPnL,
+          trade: `${t.action} ${t.symbol}`
+        };
+      });
+      setPnlHistory(timeline);
+    }
+  };
+
+  const showNotification = (title: string, description: string, variant: 'default' | 'destructive' = 'default') => {
+    toast({ title, description, variant });
+    
+    // Browser notification if permission granted
+    if (Notification.permission === 'granted') {
+      new Notification(title, { body: description });
+    }
+  };
 
   const analyzeMarket = async () => {
     setIsAnalyzing(true);
@@ -53,9 +127,21 @@ const AITrader = () => {
       };
       setTradeLogs(prev => [newLog, ...prev].slice(0, 10));
 
+      // Reload trade history
+      await loadTradeHistory();
+
       // Auto-execute if enabled and confidence is high
       if (autoExecute && data.decision.confidence === 'high' && data.decision.action !== 'hold') {
+        showNotification(
+          "Auto-Executing Trade",
+          `Executing ${data.decision.action} for ${data.decision.symbol}`,
+        );
         await executeTrade(data.decision);
+      } else if (data.decision.action !== 'hold') {
+        showNotification(
+          "New Trading Signal",
+          `AI recommends: ${data.decision.action.toUpperCase()} ${data.decision.symbol}`,
+        );
       }
 
       toast({
@@ -92,6 +178,14 @@ const AITrader = () => {
         return updated;
       });
 
+      // Reload trade history
+      await loadTradeHistory();
+
+      showNotification(
+        "Trade Executed Successfully",
+        data.message,
+      );
+
       toast({
         title: "Trade Executed",
         description: data.message,
@@ -108,6 +202,11 @@ const AITrader = () => {
   };
 
   useEffect(() => {
+    // Request notification permission
+    if (Notification.permission === 'default') {
+      Notification.requestPermission();
+    }
+
     let interval: NodeJS.Timeout;
     
     if (isEnabled) {
@@ -150,6 +249,92 @@ const AITrader = () => {
           <p className="text-muted-foreground">Automated trading based on AI market analysis</p>
         </div>
       </div>
+
+      {/* Performance Dashboard */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <Card className="p-4 bg-card/50 backdrop-blur-sm border-border">
+          <div className="flex items-center gap-3">
+            <div className={`h-10 w-10 rounded-lg flex items-center justify-center ${
+              performance.totalPnL >= 0 ? 'bg-success/20' : 'bg-danger/20'
+            }`}>
+              <DollarSign className={`h-5 w-5 ${
+                performance.totalPnL >= 0 ? 'text-success' : 'text-danger'
+              }`} />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Total P&L</p>
+              <p className={`text-lg font-bold ${
+                performance.totalPnL >= 0 ? 'text-success' : 'text-danger'
+              }`}>
+                ${performance.totalPnL.toFixed(2)}
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-4 bg-card/50 backdrop-blur-sm border-border">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
+              <Target className="h-5 w-5 text-primary" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Win Rate</p>
+              <p className="text-lg font-bold">{performance.winRate.toFixed(1)}%</p>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-4 bg-card/50 backdrop-blur-sm border-border">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-lg bg-accent/20 flex items-center justify-center">
+              <Activity className="h-5 w-5 text-accent" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Total Trades</p>
+              <p className="text-lg font-bold">{performance.totalTrades}</p>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-4 bg-card/50 backdrop-blur-sm border-border">
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 rounded-lg bg-muted/20 flex items-center justify-center">
+              <Brain className="h-5 w-5 text-muted-foreground" />
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">Executed</p>
+              <p className="text-lg font-bold">{performance.executedTrades}</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* P&L Timeline Chart */}
+      {pnlHistory.length > 0 && (
+        <Card className="p-6 bg-card/50 backdrop-blur-sm border-border">
+          <h3 className="text-lg font-bold mb-4">P&L Timeline</h3>
+          <ResponsiveContainer width="100%" height={200}>
+            <LineChart data={pnlHistory}>
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+              <XAxis dataKey="time" stroke="hsl(var(--muted-foreground))" />
+              <YAxis stroke="hsl(var(--muted-foreground))" />
+              <Tooltip 
+                contentStyle={{ 
+                  backgroundColor: 'hsl(var(--card))', 
+                  border: '1px solid hsl(var(--border))' 
+                }} 
+              />
+              <Line 
+                type="monotone" 
+                dataKey="pnl" 
+                stroke="hsl(var(--primary))" 
+                strokeWidth={2}
+                dot={{ fill: 'hsl(var(--primary))' }}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </Card>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Control Panel */}
@@ -261,6 +446,26 @@ const AITrader = () => {
                 <p className="text-sm text-muted-foreground mb-2">AI Reasoning:</p>
                 <p className="text-sm">{currentDecision.reasoning}</p>
               </div>
+
+              {currentDecision.technicals && (
+                <div className="pt-4 border-t border-border">
+                  <p className="text-sm text-muted-foreground mb-2">Technical Indicators:</p>
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="text-center p-2 bg-background/50 rounded">
+                      <p className="text-xs text-muted-foreground">Price Position</p>
+                      <p className="text-sm font-semibold">{currentDecision.technicals.pricePosition}%</p>
+                    </div>
+                    <div className="text-center p-2 bg-background/50 rounded">
+                      <p className="text-xs text-muted-foreground">Volatility</p>
+                      <p className="text-sm font-semibold">{currentDecision.technicals.volatility}%</p>
+                    </div>
+                    <div className="text-center p-2 bg-background/50 rounded">
+                      <p className="text-xs text-muted-foreground">Volume Strength</p>
+                      <p className="text-sm font-semibold">{currentDecision.technicals.volumeStrength}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </Card>
         )}

@@ -14,7 +14,96 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ai_analysis_history: {
+        Row: {
+          analysis: string | null
+          confidence: string | null
+          created_at: string | null
+          id: string
+          market_score: number | null
+          market_trend: string | null
+          query: string
+          recommendation: string | null
+          risk_level: string | null
+          sentiment: string | null
+          symbol: string | null
+        }
+        Insert: {
+          analysis?: string | null
+          confidence?: string | null
+          created_at?: string | null
+          id?: string
+          market_score?: number | null
+          market_trend?: string | null
+          query: string
+          recommendation?: string | null
+          risk_level?: string | null
+          sentiment?: string | null
+          symbol?: string | null
+        }
+        Update: {
+          analysis?: string | null
+          confidence?: string | null
+          created_at?: string | null
+          id?: string
+          market_score?: number | null
+          market_trend?: string | null
+          query?: string
+          recommendation?: string | null
+          risk_level?: string | null
+          sentiment?: string | null
+          symbol?: string | null
+        }
+        Relationships: []
+      }
+      trade_history: {
+        Row: {
+          action: string
+          amount: number
+          confidence: string | null
+          created_at: string | null
+          executed: boolean | null
+          execution_result: string | null
+          id: string
+          order_id: string | null
+          pnl: number | null
+          price: number
+          reasoning: string | null
+          sentiment: string | null
+          symbol: string
+        }
+        Insert: {
+          action: string
+          amount: number
+          confidence?: string | null
+          created_at?: string | null
+          executed?: boolean | null
+          execution_result?: string | null
+          id?: string
+          order_id?: string | null
+          pnl?: number | null
+          price: number
+          reasoning?: string | null
+          sentiment?: string | null
+          symbol: string
+        }
+        Update: {
+          action?: string
+          amount?: number
+          confidence?: string | null
+          created_at?: string | null
+          executed?: boolean | null
+          execution_result?: string | null
+          id?: string
+          order_id?: string | null
+          pnl?: number | null
+          price?: number
+          reasoning?: string | null
+          sentiment?: string | null
+          symbol?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
