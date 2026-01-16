@@ -1,0 +1,152 @@
+# NBA FanDuel Simulator Configuration
+# All tunable parameters for backtesting and betting strategies
+
+# =============================================================================
+# SPORTSBOOK SETTINGS
+# =============================================================================
+sportsbook:
+  name: "FanDuel"
+
+  # Vig removal method for calculating fair odds
+  # Options: "proportional", "additive", "power", "shin"
+  vig_method: "proportional"
+
+
+# =============================================================================
+# MODEL SETTINGS
+# =============================================================================
+model:
+  # Primary model type
+  # Options: "elo", "logistic", "logistic_with_elo", "ensemble"
+  type: "elo"
+
+  # Elo model parameters
+  elo:
+    k_factor: 20.0              # Update speed (16-32 typical)
+    home_advantage: 100.0       # Elo points for home court (~3 point spread)
+    initial_rating: 1500.0      # Starting rating for all teams
+    mean_reversion: 0.75        # Season-to-season reversion (0-1)
+
+  # Logistic regression parameters
+  logistic:
+    retrain_frequency: 100      # Retrain every N games
+    min_training_games: 200     # Minimum games before first training
+
+  # Ensemble weights (if using ensemble)
+  ensemble:
+    models: ["elo", "logistic"]
+    weights: [0.6, 0.4]
+
+
+# =============================================================================
+# STRATEGY SETTINGS
+# =============================================================================
+strategy:
+  # Expected Value thresholds
+  min_ev: 0.02                  # 2% minimum EV to place bet
+  min_edge: 0.01                # 1% minimum edge vs fair odds
+
+  # Bet types to consider
+  # Options: "moneyline_home", "moneyline_away", "spread_home", "spread_away"
+  bet_types:
+    - "moneyline_home"
+    - "moneyline_away"
+    # Spreads disabled by default (need spread cover model)
+    # - "spread_home"
+    # - "spread_away"
+
+
+# =============================================================================
+# BANKROLL MANAGEMENT
+# =============================================================================
+bankroll:
+  initial_bankroll: 10000.0     # Starting bankroll ($)
+
+  # Safety constraints
+  max_bet_percentage: 0.05      # Max 5% of bankroll per bet
+  max_daily_bets: 10            # Max bets per day
+  max_game_exposure: 0.10       # Max 10% of bankroll per game
+  min_bankroll: 0.0             # Stop if bankroll falls below this
+
+  # Bet sizing method
+  # Options: "flat", "kelly", "fractional_kelly"
+  sizing_method: "fractional_kelly"
+
+  # Sizing parameters
+  kelly_fraction: 0.25          # 1/4 Kelly (conservative)
+  flat_percentage: 0.01         # 1% flat stake (if using flat)
+
+  # FanDuel stake limits
+  min_bet_amount: 10.0          # Minimum bet ($)
+  max_bet_amount: null          # Maximum bet (null = no limit, or e.g., 500.0)
+
+  # Simulated account type
+  # "recreational" = higher limits, "sharp" = lower limits
+  account_type: "recreational"
+
+
+# =============================================================================
+# DATA SETTINGS
+# =============================================================================
+data:
+  # Data file paths
+  games_file: "data/raw/sample_games.csv"
+  odds_file: "data/raw/sample_fanduel_odds.csv"
+
+  # Date range filtering (YYYY-MM-DD format, null = no filter)
+  start_date: null              # e.g., "2023-10-01"
+  end_date: null                # e.g., "2024-04-15"
+
+  # Season filtering (list of seasons, null = all seasons)
+  seasons: null                 # e.g., [2023, 2024]
+
+  # Exclude playoff games
+  exclude_playoffs: false
+
+
+# =============================================================================
+# EVALUATION SETTINGS
+# =============================================================================
+evaluation:
+  # Calibration analysis
+  calibration_bins: 10          # Number of probability bins
+
+  # Metrics to calculate
+  calculate_sharpe: true
+  calculate_sortino: true
+  calculate_calmar: true
+
+  # Variance analysis
+  compare_expected_variance: true
+
+
+# =============================================================================
+# OUTPUT SETTINGS
+# =============================================================================
+output:
+  # Results directory
+  results_dir: "results/"
+
+  # What to save
+  save_bet_history: true
+  save_summary: true
+  save_full_report: true
+
+  # Verbosity
+  # 0 = silent, 1 = basic, 2 = detailed, 3 = debug
+  verbosity: 1
+
+
+# =============================================================================
+# ADVANCED SETTINGS
+# =============================================================================
+advanced:
+  # Random seed for reproducibility
+  random_seed: 42
+
+  # Parallel processing (not yet implemented)
+  use_parallel: false
+  num_workers: 4
+
+  # Memory optimization
+  stream_data: false            # Stream large datasets (not yet implemented)
