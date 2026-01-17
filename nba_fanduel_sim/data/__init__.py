@@ -12,9 +12,17 @@ from .loaders import (
 
 from .balldontlie_api import (
     BallDontLieAPI,
-    PlayerInfo,
-    PlayerStats,
+    PlayerInfo as BDLPlayerInfo,
+    PlayerStats as BDLPlayerStats,
     InjuryReport,
+    get_player_full_profile as get_bdl_player_profile
+)
+
+from .nba_api_client import (
+    NBAAPIClient,
+    PlayerInfo,
+    PlayerSeasonStats,
+    TeamInfo,
     get_player_full_profile
 )
 
@@ -25,8 +33,13 @@ __all__ = [
     "NBAGame",
     "FanDuelOdds",
     "BallDontLieAPI",
-    "PlayerInfo",
-    "PlayerStats",
+    "BDLPlayerInfo",
+    "BDLPlayerStats",
     "InjuryReport",
+    "get_bdl_player_profile",
+    "NBAAPIClient",
+    "PlayerInfo",
+    "PlayerSeasonStats",
+    "TeamInfo",
     "get_player_full_profile"
 ]
