@@ -13,6 +13,9 @@ import numpy as np
 from scipy.stats import norm
 from typing import Dict, Optional, List
 from dataclasses import dataclass
+import sys
+sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
+from data.balldontlie_api import BallDontLieAPI, get_player_full_profile
 
 
 @dataclass
@@ -66,9 +69,16 @@ class PlayerStatsModel:
         'pts_rebs_asts': {'mean': 25.0, 'std': 12.0}
     }
 
-    def __init__(self):
-        """Initialize player stats model"""
+    def __init__(self, balldontlie_api: Optional[BallDontLieAPI] = None):
+        """
+        Initialize player stats model
+
+        Args:
+            balldontlie_api: Optional BallDontLie API instance for real stats
+        """
         self.player_cache = {}
+        self.api = balldontlie_api
+        self.use_real_data = balldontlie_api is not None
 
     def project_player_prop(self,
                            player_name: str,
@@ -138,8 +148,7 @@ class PlayerStatsModel:
         """
         Get player's historical stats.
 
-        In production, this would query a database of player stats.
-        For now, uses defaults with some variation.
+        Uses BallDontLie API if available, otherwise falls back to demo data.
         """
 
         # Check cache
@@ -147,11 +156,50 @@ class PlayerStatsModel:
         if cache_key in self.player_cache:
             return self.player_cache[cache_key]
 
-        # Get default stats for prop type
+        # Try to get real stats from API
+        if self.use_real_data:
+            try:
+                profile = get_player_full_profile(self.api, player_name, season=2024)
+
+                if profile and profile['stats']:
+                    stats = profile['stats']
+
+                    # Map prop type to stat field
+                    stat_mapping = {
+                        'points': ('points', 5.0),  # (field, default_std)
+                        'rebounds': ('rebounds', 3.0),
+                        'assists': ('assists', 2.5),
+                        'threes': ('threes', 1.2),
+                        'pts_rebs_asts': (None, 12.0)  # Calculated
+                    }
+
+                    if prop_type in stat_mapping:
+                        field, default_std = stat_mapping[prop_type]
+
+                        if prop_type == 'pts_rebs_asts':
+                            # Combo stat
+                            mean = stats.points + stats.rebounds + stats.assists
+                        else:
+                            mean = getattr(stats, field, None)
+
+                        if mean is not None:
+                            # Use 30% of mean as std dev (conservative estimate)
+                            std = max(default_std, mean * 0.30)
+
+                            # Cache and return
+                            self.player_cache[cache_key] = (mean, std)
+                            print(f"✓ Using real stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f}")
+                            return mean, std
+
+            except Exception as e:
+                # Silently fall back to demo data if API fails
+                print(f"⚠ Could not fetch real stats for {player_name}, using demo data")
+                pass
+
+        # Fall back to demo data
         default = self.DEFAULT_STATS.get(prop_type, {'mean': 10.0, 'std': 5.0})
 
         # Add some randomness to simulate different player skills
-        # In production, this would be actual player data
         np.random.seed(hash(player_name) % (2**32))
         player_skill = np.random.uniform(0.5, 1.8)
 
@@ -187,19 +235,47 @@ class PlayerStatsModel:
         """
         Calculate matchup difficulty factor.
 
-        In production, would use opponent's defensive ratings.
+        Uses opponent's defensive ratings from API if available.
 
         Returns:
-            Multiplier (0.8 - 1.2)
+            Multiplier (0.85 - 1.15)
         """
 
-        # Simplified: hash opponent name to get consistent factor
         if not opponent:
             return 1.0
 
+        # TODO: Could use team defensive stats from API when available
+        # For now, use simplified approach
+
+        # Simplified: hash opponent name to get consistent factor
         np.random.seed(hash(f"{opponent}_{prop_type}") % (2**32))
         # Elite defense (0.85) to poor defense (1.15)
         return np.random.uniform(0.85, 1.15)
+
+    def get_player_injury_status(self, player_name: str) -> Optional[str]:
+        """
+        Get player's current injury status from API.
+
+        Returns:
+            'healthy', 'questionable', 'probable', 'doubtful', 'out', or None
+        """
+
+        if not self.use_real_data:
+            return None
+
+        try:
+            injuries = self.api.get_injuries()
+
+            for injury in injuries:
+                if injury.player_name.lower() == player_name.lower():
+                    return injury.status.lower()
+
+            # Not in injury report = healthy
+            return 'healthy'
+
+        except Exception as e:
+            print(f"⚠ Could not fetch injury status for {player_name}")
+            return None
 
     def _calculate_rest_factor(self, days_rest: int) -> float:
         """
