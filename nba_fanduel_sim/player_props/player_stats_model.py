@@ -16,6 +16,12 @@ from dataclasses import dataclass
 import sys
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 from data.nba_api_client import NBAAPIClient, get_player_full_profile
+from data.roster_updates_2025_26 import (
+    get_player_current_stats,
+    get_player_injury_status as get_manual_injury_status,
+    get_player_current_team,
+    is_player_available
+)
 
 
 @dataclass
@@ -148,7 +154,11 @@ class PlayerStatsModel:
         """
         Get player's historical stats.
 
-        Uses BallDontLie API if available, otherwise falls back to demo data.
+        Priority:
+        1. Manual 2025-26 roster updates (for trades/current season)
+        2. NBA API 2025-26 season data
+        3. NBA API 2024-25 season data
+        4. Demo data fallback
         """
 
         # Check cache
@@ -156,45 +166,71 @@ class PlayerStatsModel:
         if cache_key in self.player_cache:
             return self.player_cache[cache_key]
 
-        # Try to get real stats from NBA API
+        # PRIORITY 1: Check manual roster updates for 2025-26 season
+        manual_stats = get_player_current_stats(player_name)
+        if manual_stats:
+            stat_mapping = {
+                'points': 'points',
+                'rebounds': 'rebounds',
+                'assists': 'assists',
+                'threes': 'threes',
+            }
+
+            if prop_type in stat_mapping:
+                stat_field = stat_mapping[prop_type]
+                mean = manual_stats.get(stat_field)
+
+                if mean is not None and mean > 0:
+                    # Use 30% of mean as std dev
+                    default_stds = {'points': 5.0, 'rebounds': 3.0, 'assists': 2.5, 'threes': 1.2}
+                    std = max(default_stds.get(prop_type, 3.0), mean * 0.30)
+
+                    # Cache and return
+                    self.player_cache[cache_key] = (mean, std)
+                    team = manual_stats.get('team', '???')
+                    gp = manual_stats.get('games_played', 0)
+                    print(f"✓ Using MANUAL 2025-26 stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({team}, {gp} GP)")
+                    return mean, std
+
+        # PRIORITY 2 & 3: Try NBA API (2025-26 first, then 2024-25)
         if self.use_real_data:
-            try:
-                profile = get_player_full_profile(self.api, player_name, season="2024-25")
+            for season in ["2025-26", "2024-25"]:
+                try:
+                    profile = get_player_full_profile(self.api, player_name, season=season)
 
-                if profile and profile['stats']:
-                    stats = profile['stats']
+                    if profile and profile['stats']:
+                        stats = profile['stats']
 
-                    # Map prop type to stat field
-                    stat_mapping = {
-                        'points': ('points', 5.0),  # (field, default_std)
-                        'rebounds': ('rebounds', 3.0),
-                        'assists': ('assists', 2.5),
-                        'threes': ('three_pointers_made', 1.2),
-                        'pts_rebs_asts': (None, 12.0)  # Calculated
-                    }
+                        # Map prop type to stat field
+                        stat_mapping = {
+                            'points': ('points', 5.0),  # (field, default_std)
+                            'rebounds': ('rebounds', 3.0),
+                            'assists': ('assists', 2.5),
+                            'threes': ('three_pointers_made', 1.2),
+                            'pts_rebs_asts': (None, 12.0)  # Calculated
+                        }
 
-                    if prop_type in stat_mapping:
-                        field, default_std = stat_mapping[prop_type]
+                        if prop_type in stat_mapping:
+                            field, default_std = stat_mapping[prop_type]
 
-                        if prop_type == 'pts_rebs_asts':
-                            # Combo stat
-                            mean = stats.points + stats.rebounds + stats.assists
-                        else:
-                            mean = getattr(stats, field, None)
+                            if prop_type == 'pts_rebs_asts':
+                                # Combo stat
+                                mean = stats.points + stats.rebounds + stats.assists
+                            else:
+                                mean = getattr(stats, field, None)
 
-                        if mean is not None and mean > 0:
-                            # Use 30% of mean as std dev (conservative estimate)
-                            std = max(default_std, mean * 0.30)
+                            if mean is not None and mean > 0:
+                                # Use 30% of mean as std dev (conservative estimate)
+                                std = max(default_std, mean * 0.30)
 
-                            # Cache and return
-                            self.player_cache[cache_key] = (mean, std)
-                            print(f"✓ Using NBA.com stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
-                            return mean, std
+                                # Cache and return
+                                self.player_cache[cache_key] = (mean, std)
+                                print(f"✓ Using NBA.com {season} stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
+                                return mean, std
 
-            except Exception as e:
-                # Silently fall back to demo data if API fails
-                print(f"⚠ Could not fetch NBA stats for {player_name}, using demo data ({str(e)[:50]})")
-                pass
+                except Exception as e:
+                    # Try next season
+                    continue
 
         # Fall back to demo data
         default = self.DEFAULT_STATS.get(prop_type, {'mean': 10.0, 'std': 5.0})
@@ -256,15 +292,18 @@ class PlayerStatsModel:
         """
         Get player's current injury status.
 
-        Note: NBA API doesn't provide injury data.
-        TODO: Integrate with ESPN or other injury report source.
+        Checks manual roster updates first, then returns None if not found.
 
         Returns:
-            None (injury status not available from NBA API)
+            'healthy', 'out', 'questionable', 'doubtful', or None
         """
-        # NBA API doesn't have injury reports
-        # User should manually check injury status or integrate with ESPN API
-        return None
+        # Check manual roster updates
+        status = get_manual_injury_status(player_name)
+        if status:
+            return status
+
+        # Default to healthy if not in injury report
+        return 'healthy'
 
     def _calculate_rest_factor(self, days_rest: int) -> float:
         """
