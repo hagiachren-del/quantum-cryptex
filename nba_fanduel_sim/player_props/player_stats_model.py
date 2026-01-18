@@ -15,8 +15,7 @@ from typing import Dict, Optional, List
 from dataclasses import dataclass
 import sys
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
-from data.sportradar_api import SportradarNBAClient, get_player_full_profile  # Primary - NBA official partner
-from data.nba_api_client import NBAAPIClient  # Fallback only
+from data.sportradar_api import SportradarNBAClient, get_player_full_profile  # ONLY data source - NBA official partner
 from data.roster_updates_2025_26 import (
     get_player_current_stats,
     get_player_injury_status as get_manual_injury_status,
@@ -76,22 +75,19 @@ class PlayerStatsModel:
         'pts_rebs_asts': {'mean': 25.0, 'std': 12.0}
     }
 
-    def __init__(self, sportradar_api: Optional[SportradarNBAClient] = None,
-                 nba_api: Optional[NBAAPIClient] = None):
+    def __init__(self, sportradar_api: Optional[SportradarNBAClient] = None, use_live_data: bool = True):
         """
         Initialize player stats model
 
         Args:
-            sportradar_api: Sportradar API client - PRIMARY data source (NBA official partner)
-            nba_api: NBA API client - FALLBACK data source only
+            sportradar_api: Sportradar API client - ONLY data source (NBA official partner)
+            use_live_data: If True, fetch real-time data instead of using cache
         """
         self.player_cache = {}
-        # Use Sportradar API as primary (NBA official partner - premium data)
+        # Use Sportradar API ONLY (NBA official partner - premium LIVE data)
         sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
         self.sportradar_api = sportradar_api if sportradar_api else SportradarNBAClient(sportradar_key)
-        # Keep NBA API as fallback only
-        self.nba_api = nba_api if nba_api else NBAAPIClient()
-        self.use_real_data = True  # Use real Sportradar data
+        self.use_live_data = use_live_data  # Real-time data (no caching)
 
     def project_player_prop(self,
                            player_name: str,
@@ -159,19 +155,18 @@ class PlayerStatsModel:
 
     def _get_player_stats(self, player_name: str, prop_type: str) -> tuple:
         """
-        Get player's historical stats.
+        Get player's LIVE stats from Sportradar ONLY.
 
         Priority:
         1. Manual 2025-26 roster updates (for trades/injuries/current season)
-        2. Sportradar API 2025-26 season data (NBA official partner - premium)
-        3. Sportradar API 2024-25 season data (fallback to last season)
-        4. NBA API fallback (if Sportradar fails)
-        5. Demo data fallback (last resort)
+        2. Sportradar API LIVE data (real-time season stats)
+
+        NO FALLBACKS - Sportradar only, or raises error if player not found.
         """
 
-        # Check cache
+        # Check cache only if NOT using live data
         cache_key = f"{player_name}_{prop_type}"
-        if cache_key in self.player_cache:
+        if not self.use_live_data and cache_key in self.player_cache:
             return self.player_cache[cache_key]
 
         # PRIORITY 1: Check manual roster updates for 2025-26 season
@@ -193,99 +188,63 @@ class PlayerStatsModel:
                     default_stds = {'points': 5.0, 'rebounds': 3.0, 'assists': 2.5, 'threes': 1.2}
                     std = max(default_stds.get(prop_type, 3.0), mean * 0.30)
 
-                    # Cache and return
-                    self.player_cache[cache_key] = (mean, std)
+                    # Cache only if not live mode
+                    if not self.use_live_data:
+                        self.player_cache[cache_key] = (mean, std)
+
                     team = manual_stats.get('team', '???')
                     gp = manual_stats.get('games_played', 0)
-                    print(f"✓ Using MANUAL 2025-26 stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({team}, {gp} GP)")
+                    print(f"✓ MANUAL 2025-26: {player_name} {prop_type} = {mean:.1f} ± {std:.1f} ({team}, {gp} GP)")
                     return mean, std
 
-        # PRIORITY 2 & 3: Try Sportradar API (NBA official partner - 2025 first, then 2024)
-        if self.use_real_data:
-            for year in [2025, 2024]:
-                try:
-                    profile = get_player_full_profile(self.sportradar_api, player_name, year=year)
+        # PRIORITY 2: Sportradar API ONLY (try 2025, then 2024)
+        for year in [2025, 2024]:
+            try:
+                profile = get_player_full_profile(self.sportradar_api, player_name, year=year)
 
-                    if profile and profile['stats']:
-                        stats = profile['stats']
+                if profile and profile['stats']:
+                    stats = profile['stats']
 
-                        # Map prop type to stat field (Sportradar field names)
-                        stat_mapping = {
-                            'points': ('points', 5.0),  # (field, default_std)
-                            'rebounds': ('rebounds', 3.0),
-                            'assists': ('assists', 2.5),
-                            'threes': ('three_points_made', 1.2),
-                            'pts_rebs_asts': (None, 12.0)  # Calculated
-                        }
+                    # Map prop type to stat field (Sportradar field names)
+                    stat_mapping = {
+                        'points': ('points', 5.0),  # (field, default_std)
+                        'rebounds': ('rebounds', 3.0),
+                        'assists': ('assists', 2.5),
+                        'threes': ('three_points_made', 1.2),
+                        'pts_rebs_asts': (None, 12.0)  # Calculated
+                    }
 
-                        if prop_type in stat_mapping:
-                            field, default_std = stat_mapping[prop_type]
+                    if prop_type in stat_mapping:
+                        field, default_std = stat_mapping[prop_type]
 
-                            if prop_type == 'pts_rebs_asts':
-                                # Combo stat
-                                mean = stats.points + stats.rebounds + stats.assists
-                            else:
-                                mean = getattr(stats, field, None)
+                        if prop_type == 'pts_rebs_asts':
+                            # Combo stat
+                            mean = stats.points + stats.rebounds + stats.assists
+                        else:
+                            mean = getattr(stats, field, None)
 
-                            if mean is not None and mean > 0:
-                                # Use 30% of mean as std dev (conservative estimate)
-                                std = max(default_std, mean * 0.30)
+                        if mean is not None and mean > 0:
+                            # Use 30% of mean as std dev (conservative estimate)
+                            std = max(default_std, mean * 0.30)
 
-                                # Cache and return
+                            # Cache only if not live mode
+                            if not self.use_live_data:
                                 self.player_cache[cache_key] = (mean, std)
-                                season_str = f"{year}-{str(year+1)[-2:]}"
-                                print(f"✓ Using Sportradar {season_str} stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
-                                return mean, std
 
-                except Exception as e:
-                    # Try next season or fallback
-                    continue
+                            season_str = f"{year}-{str(year+1)[-2:]}"
+                            data_mode = "LIVE" if self.use_live_data else "CACHED"
+                            print(f"✓ Sportradar {data_mode} {season_str}: {player_name} {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
+                            return mean, std
 
-            # PRIORITY 4: Fallback to NBA API if Sportradar fails
-            for season in ["2025-26", "2024-25"]:
-                try:
-                    stats = self.nba_api.get_player_season_stats(player_name, season=season)
+            except Exception as e:
+                # Try next season
+                if year == 2024:
+                    # Last attempt failed
+                    print(f"❌ Sportradar API Error for {player_name}: {str(e)}")
+                continue
 
-                    if stats:
-                        stat_mapping = {
-                            'points': ('ppg', 5.0),
-                            'rebounds': ('rpg', 3.0),
-                            'assists': ('apg', 2.5),
-                            'threes': ('fg3m', 1.2),
-                            'pts_rebs_asts': (None, 12.0)
-                        }
-
-                        if prop_type in stat_mapping:
-                            field, default_std = stat_mapping[prop_type]
-
-                            if prop_type == 'pts_rebs_asts':
-                                mean = stats.ppg + stats.rpg + stats.apg
-                            else:
-                                mean = getattr(stats, field, None)
-
-                            if mean is not None and mean > 0:
-                                std = max(default_std, mean * 0.30)
-                                self.player_cache[cache_key] = (mean, std)
-                                print(f"✓ Using NBA.com FALLBACK {season} stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.gp} GP)")
-                                return mean, std
-
-                except Exception as e:
-                    continue
-
-        # Fall back to demo data
-        default = self.DEFAULT_STATS.get(prop_type, {'mean': 10.0, 'std': 5.0})
-
-        # Add some randomness to simulate different player skills
-        np.random.seed(hash(player_name) % (2**32))
-        player_skill = np.random.uniform(0.5, 1.8)
-
-        mean = default['mean'] * player_skill
-        std = default['std'] * np.sqrt(player_skill)
-
-        # Cache results
-        self.player_cache[cache_key] = (mean, std)
-
-        return mean, std
+        # NO FALLBACK - Raise error if player not found
+        raise ValueError(f"❌ SPORTRADAR ONLY MODE: Player '{player_name}' not found in Sportradar API. No fallback data sources available.")
 
     def _calculate_injury_factor(self, injury_status: Optional[str]) -> float:
         """

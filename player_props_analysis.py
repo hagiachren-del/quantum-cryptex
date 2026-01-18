@@ -17,8 +17,7 @@ from typing import List, Dict
 
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 
-from data.sportradar_api import SportradarNBAClient  # Primary - NBA official partner
-from data.nba_api_client import NBAAPIClient  # Fallback only
+from data.sportradar_api import SportradarNBAClient  # ONLY data source - NBA official partner (LIVE)
 from player_props.player_stats_model import PlayerStatsModel
 from odds.fanduel_odds_utils import american_to_probability
 from evaluation.market_efficiency import MarketEfficiencyAnalyzer
@@ -160,24 +159,23 @@ def main():
     """Main analysis"""
 
     print("\n" + "=" * 100)
-    print("🏀 NBA PLAYER PROPS ANALYSIS - SPORTRADAR PREMIUM DATA")
+    print("🏀 NBA PLAYER PROPS ANALYSIS - SPORTRADAR LIVE DATA ONLY")
     print("=" * 100)
     print()
-    print("✓ Using Sportradar API (NBA official partner - primary source)")
+    print("✓ Using Sportradar API ONLY (NBA official partner)")
+    print("✓ LIVE real-time data (no caching)")
     print("✓ Same professional-grade data as major sportsbooks")
-    print("✓ NBA API available as fallback")
     print("✓ Manual roster updates for trades & current injuries")
-    print("✓ Real 2024-25 season stats with 1-hour cache")
+    print("✓ NO FALLBACK APIs - Sportradar exclusive")
     print()
 
-    # Initialize - Sportradar as primary
-    print("Initializing Sportradar API (primary)...")
+    # Initialize - Sportradar ONLY with LIVE data
+    print("Initializing Sportradar API (LIVE mode - no cache)...")
     sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
-    sportradar_api = SportradarNBAClient(sportradar_key)
-    nba_api = NBAAPIClient()  # Fallback only
-    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, nba_api=nba_api)
+    sportradar_api = SportradarNBAClient(sportradar_key, use_live_data=True)
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=True)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
-    print("✓ Ready")
+    print("✓ Ready (LIVE DATA MODE)")
     print()
 
     print("=" * 100)

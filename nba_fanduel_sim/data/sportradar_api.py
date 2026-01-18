@@ -114,23 +114,25 @@ class SportradarNBAClient:
 
     BASE_URL = "https://api.sportradar.us/nba/trial/v8/en"
 
-    def __init__(self, api_key: str, rate_limit_delay: float = 1.0):
+    def __init__(self, api_key: str, rate_limit_delay: float = 1.0, use_live_data: bool = True):
         """
         Initialize Sportradar NBA API client.
 
         Args:
             api_key: Sportradar API key
             rate_limit_delay: Seconds between requests (trial: 1/sec, paid: varies)
+            use_live_data: If True, disable caching for real-time data
         """
         self.api_key = api_key
         self.rate_limit_delay = rate_limit_delay
         self.last_request_time = 0
+        self.use_live_data = use_live_data
 
-        # Enhanced caching system
+        # Caching system (disabled in LIVE mode)
         self._teams_cache = None
         self._players_cache = {}
         self._stats_cache = {}  # Cache player stats {player_id_year: (stats, timestamp)}
-        self._cache_ttl = 3600  # 1 hour cache TTL for stats
+        self._cache_ttl = 0 if use_live_data else 3600  # 0 = no cache for LIVE, 1 hour for historical
 
     def _rate_limit(self):
         """Enforce rate limiting"""

@@ -16,8 +16,7 @@ from typing import List, Dict
 
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 
-from data.sportradar_api import SportradarNBAClient  # Primary - NBA official partner
-from data.nba_api_client import NBAAPIClient  # Fallback only
+from data.sportradar_api import SportradarNBAClient  # ONLY data source - NBA official partner (LIVE)
 from player_props.player_stats_model import PlayerStatsModel
 from models.enhanced_elo_model import EnhancedEloModel
 from odds.fanduel_odds_utils import american_to_probability, probability_to_american
@@ -408,16 +407,17 @@ def main():
     print("="*100)
     print(f"\n📅 {datetime.now().strftime('%A, %B %d, %Y')}")
 
-    # Initialize - Sportradar as primary
+    # Initialize - Sportradar ONLY with LIVE data
     print("\n🔧 Initializing analysis tools...")
-    print("   → Using Sportradar API (NBA official partner)")
+    print("   → Using Sportradar API ONLY (NBA official partner)")
+    print("   → LIVE real-time data mode (no caching)")
+    print("   → NO FALLBACK APIs")
     games = load_todays_games()
     elo_model = EnhancedEloModel()
-    sportradar_api = SportradarNBAClient("93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn")
-    nba_api = NBAAPIClient()  # Fallback only
-    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, nba_api=nba_api)
+    sportradar_api = SportradarNBAClient("93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn", use_live_data=True)
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=True)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
-    print("✓ Ready (Sportradar + NBA API fallback)\n")
+    print("✓ Ready (LIVE DATA MODE - Sportradar only)\n")
 
     # 1. Moneyline Analysis
     print("\n" + "="*100)
