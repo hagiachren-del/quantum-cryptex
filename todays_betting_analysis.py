@@ -407,17 +407,22 @@ def main():
     print("="*100)
     print(f"\n📅 {datetime.now().strftime('%A, %B %d, %Y')}")
 
-    # Initialize - Sportradar ONLY with LIVE data
+    # Initialize - Sportradar ONLY with caching (1-hour refresh)
     print("\n🔧 Initializing analysis tools...")
     print("   → Using Sportradar API ONLY (NBA official partner)")
-    print("   → LIVE real-time data mode (no caching)")
+    print("   → Cached data mode (1-hour refresh)")
+    print("   → 5-second rate limit to avoid 429 errors")
     print("   → NO FALLBACK APIs")
     games = load_todays_games()
     elo_model = EnhancedEloModel()
-    sportradar_api = SportradarNBAClient("93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn", use_live_data=True)
-    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=True)
+    sportradar_api = SportradarNBAClient(
+        "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn",
+        rate_limit_delay=5.0,
+        use_live_data=False  # Enable caching
+    )
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=False)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
-    print("✓ Ready (LIVE DATA MODE - Sportradar only)\n")
+    print("✓ Ready (CACHED MODE - Sportradar only)\n")
 
     # 1. Moneyline Analysis
     print("\n" + "="*100)

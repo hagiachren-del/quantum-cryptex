@@ -86,7 +86,11 @@ class PlayerStatsModel:
         self.player_cache = {}
         # Use Sportradar API ONLY (NBA official partner - premium LIVE data)
         sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
-        self.sportradar_api = sportradar_api if sportradar_api else SportradarNBAClient(sportradar_key)
+        self.sportradar_api = sportradar_api if sportradar_api else SportradarNBAClient(
+            sportradar_key,
+            rate_limit_delay=5.0,  # 5 seconds between requests to avoid 429 errors
+            use_live_data=use_live_data
+        )
         self.use_live_data = use_live_data  # Real-time data (no caching)
 
     def project_player_prop(self,

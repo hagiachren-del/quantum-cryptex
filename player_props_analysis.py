@@ -159,23 +159,28 @@ def main():
     """Main analysis"""
 
     print("\n" + "=" * 100)
-    print("🏀 NBA PLAYER PROPS ANALYSIS - SPORTRADAR LIVE DATA ONLY")
+    print("🏀 NBA PLAYER PROPS ANALYSIS - SPORTRADAR CACHED DATA")
     print("=" * 100)
     print()
     print("✓ Using Sportradar API ONLY (NBA official partner)")
-    print("✓ LIVE real-time data (no caching)")
+    print("✓ Cached data mode (1-hour refresh)")
+    print("✓ 5-second rate limit to avoid 429 errors")
     print("✓ Same professional-grade data as major sportsbooks")
     print("✓ Manual roster updates for trades & current injuries")
     print("✓ NO FALLBACK APIs - Sportradar exclusive")
     print()
 
-    # Initialize - Sportradar ONLY with LIVE data
-    print("Initializing Sportradar API (LIVE mode - no cache)...")
+    # Initialize - Sportradar ONLY with caching
+    print("Initializing Sportradar API (cached mode)...")
     sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
-    sportradar_api = SportradarNBAClient(sportradar_key, use_live_data=True)
-    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=True)
+    sportradar_api = SportradarNBAClient(
+        sportradar_key,
+        rate_limit_delay=5.0,
+        use_live_data=False  # Enable caching
+    )
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, use_live_data=False)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
-    print("✓ Ready (LIVE DATA MODE)")
+    print("✓ Ready (CACHED MODE)")
     print()
 
     print("=" * 100)
