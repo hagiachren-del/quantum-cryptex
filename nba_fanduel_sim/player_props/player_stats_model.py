@@ -15,7 +15,7 @@ from typing import Dict, Optional, List
 from dataclasses import dataclass
 import sys
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
-from data.nba_api_client import NBAAPIClient, get_player_full_profile
+from data.sportradar_api import SportradarNBAClient, get_player_full_profile
 from data.roster_updates_2025_26 import (
     get_player_current_stats,
     get_player_injury_status as get_manual_injury_status,
@@ -75,16 +75,18 @@ class PlayerStatsModel:
         'pts_rebs_asts': {'mean': 25.0, 'std': 12.0}
     }
 
-    def __init__(self, nba_api: Optional[NBAAPIClient] = None):
+    def __init__(self, sportradar_api: Optional[SportradarNBAClient] = None):
         """
         Initialize player stats model
 
         Args:
-            nba_api: Optional NBA API client for real stats (FREE, no API key needed!)
+            sportradar_api: Optional Sportradar API client for real stats
         """
         self.player_cache = {}
-        self.api = nba_api if nba_api else NBAAPIClient()  # Always use NBA API
-        self.use_real_data = True  # NBA API is free and always available
+        # Use Sportradar API with provided key
+        api_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
+        self.api = sportradar_api if sportradar_api else SportradarNBAClient(api_key)
+        self.use_real_data = True  # Sportradar provides real-time data
 
     def project_player_prop(self,
                            player_name: str,
@@ -192,21 +194,21 @@ class PlayerStatsModel:
                     print(f"✓ Using MANUAL 2025-26 stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({team}, {gp} GP)")
                     return mean, std
 
-        # PRIORITY 2 & 3: Try NBA API (2025-26 first, then 2024-25)
+        # PRIORITY 2 & 3: Try Sportradar API (2025 first, then 2024)
         if self.use_real_data:
-            for season in ["2025-26", "2024-25"]:
+            for year in [2025, 2024]:
                 try:
-                    profile = get_player_full_profile(self.api, player_name, season=season)
+                    profile = get_player_full_profile(self.api, player_name, year=year)
 
                     if profile and profile['stats']:
                         stats = profile['stats']
 
-                        # Map prop type to stat field
+                        # Map prop type to stat field (Sportradar field names)
                         stat_mapping = {
                             'points': ('points', 5.0),  # (field, default_std)
                             'rebounds': ('rebounds', 3.0),
                             'assists': ('assists', 2.5),
-                            'threes': ('three_pointers_made', 1.2),
+                            'threes': ('three_points_made', 1.2),
                             'pts_rebs_asts': (None, 12.0)  # Calculated
                         }
 
@@ -225,7 +227,8 @@ class PlayerStatsModel:
 
                                 # Cache and return
                                 self.player_cache[cache_key] = (mean, std)
-                                print(f"✓ Using NBA.com {season} stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
+                                season_str = f"{year}-{str(year+1)[-2:]}"
+                                print(f"✓ Using Sportradar {season_str} stats for {player_name}: {prop_type} = {mean:.1f} ± {std:.1f} ({stats.games_played} GP)")
                                 return mean, std
 
                 except Exception as e:
