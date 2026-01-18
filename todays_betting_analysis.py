@@ -16,8 +16,8 @@ from typing import List, Dict
 
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 
-from data.nba_api_client import NBAAPIClient
-from data.sportradar_api import SportradarNBAClient
+from data.sportradar_api import SportradarNBAClient  # Primary - NBA official partner
+from data.nba_api_client import NBAAPIClient  # Fallback only
 from player_props.player_stats_model import PlayerStatsModel
 from models.enhanced_elo_model import EnhancedEloModel
 from odds.fanduel_odds_utils import american_to_probability, probability_to_american
@@ -408,15 +408,16 @@ def main():
     print("="*100)
     print(f"\n📅 {datetime.now().strftime('%A, %B %d, %Y')}")
 
-    # Initialize
+    # Initialize - Sportradar as primary
     print("\n🔧 Initializing analysis tools...")
+    print("   → Using Sportradar API (NBA official partner)")
     games = load_todays_games()
     elo_model = EnhancedEloModel()
-    nba_api = NBAAPIClient()
     sportradar_api = SportradarNBAClient("93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn")
-    stats_model = PlayerStatsModel(nba_api=nba_api, sportradar_api=sportradar_api)
+    nba_api = NBAAPIClient()  # Fallback only
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, nba_api=nba_api)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
-    print("✓ Ready\n")
+    print("✓ Ready (Sportradar + NBA API fallback)\n")
 
     # 1. Moneyline Analysis
     print("\n" + "="*100)

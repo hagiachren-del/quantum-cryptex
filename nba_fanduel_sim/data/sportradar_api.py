@@ -126,9 +126,11 @@ class SportradarNBAClient:
         self.rate_limit_delay = rate_limit_delay
         self.last_request_time = 0
 
-        # Cache
+        # Enhanced caching system
         self._teams_cache = None
         self._players_cache = {}
+        self._stats_cache = {}  # Cache player stats {player_id_year: (stats, timestamp)}
+        self._cache_ttl = 3600  # 1 hour cache TTL for stats
 
     def _rate_limit(self):
         """Enforce rate limiting"""
@@ -324,7 +326,7 @@ class SportradarNBAClient:
     def get_player_season_stats(self, player_id: str, year: int = 2025,
                                 season_type: str = "REG") -> Optional[PlayerSeasonStats]:
         """
-        Get player season statistics.
+        Get player season statistics with caching.
 
         Args:
             player_id: Sportradar player ID
@@ -334,6 +336,14 @@ class SportradarNBAClient:
         Returns:
             PlayerSeasonStats or None
         """
+        # Check cache first
+        cache_key = f"{player_id}_{year}_{season_type}"
+        if cache_key in self._stats_cache:
+            stats, timestamp = self._stats_cache[cache_key]
+            # Check if cache is still valid (within TTL)
+            if time.time() - timestamp < self._cache_ttl:
+                return stats
+
         endpoint = f"/seasons/{year}/{season_type}/players/{player_id}/statistics.json"
         data = self._make_request(endpoint)
 
@@ -351,7 +361,7 @@ class SportradarNBAClient:
         if games == 0:
             games = 1
 
-        return PlayerSeasonStats(
+        stats = PlayerSeasonStats(
             player_id=player_id,
             player_name=data.get('full_name', ''),
             team=season.get('teams', [{}])[0].get('alias', '') if season.get('teams') else '',
@@ -379,6 +389,12 @@ class SportradarNBAClient:
             personal_fouls=totals.get('personal_fouls', 0) / games,
             plus_minus=totals.get('plus_minus', 0) / games
         )
+
+        # Cache the stats with current timestamp
+        cache_key = f"{player_id}_{year}_{season_type}"
+        self._stats_cache[cache_key] = (stats, time.time())
+
+        return stats
 
     def find_player_by_name(self, name: str) -> Optional[str]:
         """

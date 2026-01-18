@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Comprehensive Player Props Analysis with NBA API
+Comprehensive Player Props Analysis with Sportradar API
 
-Analyzes player props for today's games using official NBA.com statistics.
-Shows detailed projections for top players in each game.
+Analyzes player props for today's games using Sportradar premium statistics.
+Sportradar is the official NBA data partner used by major sportsbooks.
 
 Usage:
     python3 player_props_analysis.py
@@ -17,8 +17,8 @@ from typing import List, Dict
 
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 
-from data.nba_api_client import NBAAPIClient
-from data.sportradar_api import SportradarNBAClient  # For live games/injuries
+from data.sportradar_api import SportradarNBAClient  # Primary - NBA official partner
+from data.nba_api_client import NBAAPIClient  # Fallback only
 from player_props.player_stats_model import PlayerStatsModel
 from odds.fanduel_odds_utils import american_to_probability
 from evaluation.market_efficiency import MarketEfficiencyAnalyzer
@@ -160,21 +160,22 @@ def main():
     """Main analysis"""
 
     print("\n" + "=" * 100)
-    print("🏀 NBA PLAYER PROPS ANALYSIS - HYBRID DATA SYSTEM")
+    print("🏀 NBA PLAYER PROPS ANALYSIS - SPORTRADAR PREMIUM DATA")
     print("=" * 100)
     print()
-    print("✓ Using NBA API for player statistics (FREE, official NBA.com)")
-    print("✓ Sportradar available for live games & injury reports")
+    print("✓ Using Sportradar API (NBA official partner - primary source)")
+    print("✓ Same professional-grade data as major sportsbooks")
+    print("✓ NBA API available as fallback")
     print("✓ Manual roster updates for trades & current injuries")
-    print("✓ Real 2024-25 season stats (2025-26 when available)")
+    print("✓ Real 2024-25 season stats with 1-hour cache")
     print()
 
-    # Initialize
-    print("Initializing APIs...")
-    nba_api = NBAAPIClient()
+    # Initialize - Sportradar as primary
+    print("Initializing Sportradar API (primary)...")
     sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
     sportradar_api = SportradarNBAClient(sportradar_key)
-    stats_model = PlayerStatsModel(nba_api=nba_api, sportradar_api=sportradar_api)
+    nba_api = NBAAPIClient()  # Fallback only
+    stats_model = PlayerStatsModel(sportradar_api=sportradar_api, nba_api=nba_api)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
     print("✓ Ready")
     print()
