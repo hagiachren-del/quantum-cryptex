@@ -2,11 +2,11 @@
 """
 Comprehensive Player Props Analysis with NBA API
 
-Analyzes player props for today's games using real NBA.com statistics.
+Analyzes player props for today's games using official NBA.com statistics.
 Shows detailed projections for top players in each game.
 
 Usage:
-    python3 player_props_analysis.py YOUR_ODDS_API_KEY
+    python3 player_props_analysis.py
 """
 
 import sys
@@ -18,6 +18,7 @@ from typing import List, Dict
 sys.path.insert(0, '/home/user/quantum-cryptex/nba_fanduel_sim')
 
 from data.nba_api_client import NBAAPIClient
+from data.sportradar_api import SportradarNBAClient  # For live games/injuries
 from player_props.player_stats_model import PlayerStatsModel
 from odds.fanduel_odds_utils import american_to_probability
 from evaluation.market_efficiency import MarketEfficiencyAnalyzer
@@ -113,7 +114,7 @@ def display_prop_analysis(prop: Dict, analysis: Dict):
     print(f"🏀 {analysis['player']} - {analysis['prop_type'].upper()}")
     print(f"{'='*100}")
 
-    print(f"\n📊 REAL NBA STATS (2024-25 Season)")
+    print(f"\n📊 NBA.COM STATS (2024-25 Season)")
     print(f"   Season Average: {projection.season_avg:.1f}")
     print(f"   Standard Deviation: {projection.std_dev:.1f}")
 
@@ -159,18 +160,21 @@ def main():
     """Main analysis"""
 
     print("\n" + "=" * 100)
-    print("🏀 NBA PLAYER PROPS ANALYSIS - REAL NBA.COM STATISTICS")
+    print("🏀 NBA PLAYER PROPS ANALYSIS - HYBRID DATA SYSTEM")
     print("=" * 100)
     print()
-    print("✓ Using official NBA API (free, no API key needed)")
-    print("✓ Real 2024-25 season stats for all players")
-    print("✓ Current rosters and team information")
+    print("✓ Using NBA API for player statistics (FREE, official NBA.com)")
+    print("✓ Sportradar available for live games & injury reports")
+    print("✓ Manual roster updates for trades & current injuries")
+    print("✓ Real 2024-25 season stats (2025-26 when available)")
     print()
 
     # Initialize
-    print("Initializing NBA API client...")
+    print("Initializing APIs...")
     nba_api = NBAAPIClient()
-    stats_model = PlayerStatsModel(nba_api=nba_api)
+    sportradar_key = "93Qg8StSODooorMmFtlsvkrzpd8z7GxNPwUe16bn"
+    sportradar_api = SportradarNBAClient(sportradar_key)
+    stats_model = PlayerStatsModel(nba_api=nba_api, sportradar_api=sportradar_api)
     efficiency_analyzer = MarketEfficiencyAnalyzer()
     print("✓ Ready")
     print()
@@ -233,7 +237,7 @@ def main():
 
     print("✅ Player props markets are typically 80-85% efficient")
     print("✅ Finding 0-2 positive EV props per slate is normal")
-    print("✅ All projections use REAL 2024-25 NBA.com statistics")
+    print("✅ All projections use REAL NBA.com official statistics")
     print()
 
 
