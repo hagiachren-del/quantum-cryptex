@@ -113,7 +113,8 @@ def generate_roster_updates(players_dict):
 
     for player_name, stats in sorted_players:
         if stats['games_played'] >= 5 and stats['points'] > 5.0:  # Filter for active players
-            output.append(f"    '{player_name}': {{")
+            # Escape single quotes in player names by using double quotes
+            output.append(f'    "{player_name}": {{')
             output.append(f"        'team': '{stats['team']}',")
             output.append(f"        'games_played': {stats['games_played']},")
             output.append(f"        'points': {stats['points']:.1f},")
