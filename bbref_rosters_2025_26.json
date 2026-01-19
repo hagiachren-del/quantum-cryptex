@@ -1,0 +1,5102 @@
+{
+  "Luka Don\u00c4\u008di\u00c4\u0087": {
+    "team": "LAL",
+    "position": "PG",
+    "games_played": 32,
+    "points": 33.6,
+    "rebounds": 7.7,
+    "assists": 8.7,
+    "threes": 3.4,
+    "minutes": 36.4
+  },
+  "Shai Gilgeous-Alexander": {
+    "team": "OKC",
+    "position": "PG",
+    "games_played": 41,
+    "points": 31.8,
+    "rebounds": 4.4,
+    "assists": 6.2,
+    "threes": 2.0,
+    "minutes": 33.3
+  },
+  "Tyrese Maxey": {
+    "team": "PHI",
+    "position": "PG",
+    "games_played": 38,
+    "points": 30.3,
+    "rebounds": 4.4,
+    "assists": 6.7,
+    "threes": 3.7,
+    "minutes": 39.3
+  },
+  "Jaylen Brown": {
+    "team": "BOS",
+    "position": "SF",
+    "games_played": 38,
+    "points": 29.7,
+    "rebounds": 6.4,
+    "assists": 4.8,
+    "threes": 2.2,
+    "minutes": 34.0
+  },
+  "Anthony Edwards": {
+    "team": "MIN",
+    "position": "SG",
+    "games_played": 34,
+    "points": 29.6,
+    "rebounds": 4.9,
+    "assists": 3.7,
+    "threes": 3.5,
+    "minutes": 35.1
+  },
+  "Nikola Joki\u00c4\u0087": {
+    "team": "DEN",
+    "position": "C",
+    "games_played": 32,
+    "points": 29.6,
+    "rebounds": 12.2,
+    "assists": 11.0,
+    "threes": 2.1,
+    "minutes": 34.6
+  },
+  "Donovan Mitchell": {
+    "team": "CLE",
+    "position": "SG",
+    "games_played": 39,
+    "points": 29.2,
+    "rebounds": 4.8,
+    "assists": 5.7,
+    "threes": 3.9,
+    "minutes": 34.0
+  },
+  "Giannis Antetokounmpo": {
+    "team": "MIL",
+    "position": "PF",
+    "games_played": 27,
+    "points": 28.8,
+    "rebounds": 9.5,
+    "assists": 5.5,
+    "threes": 0.6,
+    "minutes": 29.0
+  },
+  "Jalen Brunson": {
+    "team": "NYK",
+    "position": "PG",
+    "games_played": 37,
+    "points": 28.2,
+    "rebounds": 3.2,
+    "assists": 6.1,
+    "threes": 3.0,
+    "minutes": 34.5
+  },
+  "Kawhi Leonard": {
+    "team": "LAC",
+    "position": "SF",
+    "games_played": 30,
+    "points": 28.2,
+    "rebounds": 6.3,
+    "assists": 3.5,
+    "threes": 2.9,
+    "minutes": 33.8
+  },
+  "Lauri Markkanen": {
+    "team": "UTA",
+    "position": "PF",
+    "games_played": 33,
+    "points": 27.9,
+    "rebounds": 7.2,
+    "assists": 2.2,
+    "threes": 2.9,
+    "minutes": 36.0
+  },
+  "Stephen Curry": {
+    "team": "GSW",
+    "position": "PG",
+    "games_played": 33,
+    "points": 27.6,
+    "rebounds": 3.8,
+    "assists": 4.9,
+    "threes": 4.5,
+    "minutes": 31.9
+  },
+  "Austin Reaves": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 23,
+    "points": 26.6,
+    "rebounds": 5.2,
+    "assists": 6.3,
+    "threes": 2.7,
+    "minutes": 35.3
+  },
+  "Kevin Durant": {
+    "team": "HOU",
+    "position": "SF",
+    "games_played": 37,
+    "points": 26.3,
+    "rebounds": 5.4,
+    "assists": 4.5,
+    "threes": 2.2,
+    "minutes": 36.5
+  },
+  "Jamal Murray": {
+    "team": "DEN",
+    "position": "PG",
+    "games_played": 38,
+    "points": 26.2,
+    "rebounds": 4.5,
+    "assists": 7.4,
+    "threes": 3.5,
+    "minutes": 35.7
+  },
+  "Deni Avdija": {
+    "team": "POR",
+    "position": "SF",
+    "games_played": 40,
+    "points": 26.1,
+    "rebounds": 7.1,
+    "assists": 6.9,
+    "threes": 2.3,
+    "minutes": 35.4
+  },
+  "Cade Cunningham": {
+    "team": "DET",
+    "position": "PG",
+    "games_played": 35,
+    "points": 25.9,
+    "rebounds": 6.0,
+    "assists": 9.6,
+    "threes": 2.0,
+    "minutes": 35.3
+  },
+  "James Harden": {
+    "team": "LAC",
+    "position": "PG",
+    "games_played": 38,
+    "points": 25.8,
+    "rebounds": 4.7,
+    "assists": 8.1,
+    "threes": 3.2,
+    "minutes": 35.7
+  },
+  "Michael Porter Jr.": {
+    "team": "BRK",
+    "position": "SF",
+    "games_played": 32,
+    "points": 25.8,
+    "rebounds": 7.5,
+    "assists": 3.2,
+    "threes": 3.8,
+    "minutes": 33.1
+  },
+  "Devin Booker": {
+    "team": "PHO",
+    "position": "SG",
+    "games_played": 38,
+    "points": 25.3,
+    "rebounds": 4.1,
+    "assists": 6.4,
+    "threes": 1.6,
+    "minutes": 34.2
+  },
+  "Victor Wembanyama": {
+    "team": "SAS",
+    "position": "C",
+    "games_played": 28,
+    "points": 24.5,
+    "rebounds": 10.9,
+    "assists": 3.0,
+    "threes": 1.7,
+    "minutes": 28.8
+  },
+  "Joel Embiid": {
+    "team": "PHI",
+    "position": "C",
+    "games_played": 22,
+    "points": 24.0,
+    "rebounds": 6.9,
+    "assists": 3.3,
+    "threes": 1.0,
+    "minutes": 29.5
+  },
+  "Keyonte George": {
+    "team": "UTA",
+    "position": "PG",
+    "games_played": 41,
+    "points": 23.8,
+    "rebounds": 4.1,
+    "assists": 6.8,
+    "threes": 2.5,
+    "minutes": 34.3
+  },
+  "Norman Powell": {
+    "team": "MIA",
+    "position": "SG",
+    "games_played": 36,
+    "points": 23.8,
+    "rebounds": 3.8,
+    "assists": 2.7,
+    "threes": 3.1,
+    "minutes": 31.0
+  },
+  "Pascal Siakam": {
+    "team": "IND",
+    "position": "PF",
+    "games_played": 41,
+    "points": 23.6,
+    "rebounds": 6.9,
+    "assists": 3.9,
+    "threes": 1.8,
+    "minutes": 33.9
+  },
+  "Jalen Johnson": {
+    "team": "ATL",
+    "position": "SF",
+    "games_played": 40,
+    "points": 22.8,
+    "rebounds": 10.1,
+    "assists": 8.0,
+    "threes": 1.6,
+    "minutes": 35.3
+  },
+  "LeBron James": {
+    "team": "LAL",
+    "position": "SF",
+    "games_played": 23,
+    "points": 22.6,
+    "rebounds": 6.0,
+    "assists": 6.9,
+    "threes": 1.6,
+    "minutes": 33.2
+  },
+  "Zion Williamson": {
+    "team": "NOP",
+    "position": "PF",
+    "games_played": 28,
+    "points": 22.6,
+    "rebounds": 5.8,
+    "assists": 3.5,
+    "threes": 0.0,
+    "minutes": 29.3
+  },
+  "Julius Randle": {
+    "team": "MIN",
+    "position": "PF",
+    "games_played": 43,
+    "points": 22.5,
+    "rebounds": 7.1,
+    "assists": 5.5,
+    "threes": 1.6,
+    "minutes": 33.7
+  },
+  "Franz Wagner": {
+    "team": "ORL",
+    "position": "SF",
+    "games_played": 25,
+    "points": 22.5,
+    "rebounds": 6.2,
+    "assists": 3.6,
+    "threes": 1.6,
+    "minutes": 33.1
+  },
+  "Trey Murphy III": {
+    "team": "NOP",
+    "position": "SF",
+    "games_played": 40,
+    "points": 22.2,
+    "rebounds": 6.2,
+    "assists": 3.6,
+    "threes": 3.2,
+    "minutes": 35.7
+  },
+  "Tyler Herro": {
+    "team": "MIA",
+    "position": "SG",
+    "games_played": 11,
+    "points": 21.9,
+    "rebounds": 4.7,
+    "assists": 2.7,
+    "threes": 2.2,
+    "minutes": 31.7
+  },
+  "Brandon Ingram": {
+    "team": "TOR",
+    "position": "SF",
+    "games_played": 41,
+    "points": 21.8,
+    "rebounds": 6.0,
+    "assists": 3.7,
+    "threes": 1.7,
+    "minutes": 33.9
+  },
+  "Alperen \u00c5\u009eeng\u00c3\u00bcn": {
+    "team": "HOU",
+    "position": "C",
+    "games_played": 32,
+    "points": 21.6,
+    "rebounds": 9.2,
+    "assists": 6.4,
+    "threes": 0.7,
+    "minutes": 34.3
+  },
+  "Shaedon Sharpe": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 39,
+    "points": 21.6,
+    "rebounds": 4.5,
+    "assists": 2.7,
+    "threes": 2.0,
+    "minutes": 29.9
+  },
+  "Paolo Banchero": {
+    "team": "ORL",
+    "position": "PF",
+    "games_played": 31,
+    "points": 21.1,
+    "rebounds": 8.8,
+    "assists": 4.9,
+    "threes": 1.0,
+    "minutes": 33.8
+  },
+  "Karl-Anthony Towns": {
+    "team": "NYK",
+    "position": "C",
+    "games_played": 39,
+    "points": 20.9,
+    "rebounds": 11.5,
+    "assists": 2.9,
+    "threes": 1.7,
+    "minutes": 32.4
+  },
+  "Dillon Brooks": {
+    "team": "PHO",
+    "position": "SF",
+    "games_played": 36,
+    "points": 20.7,
+    "rebounds": 3.3,
+    "assists": 1.7,
+    "threes": 2.4,
+    "minutes": 30.7
+  },
+  "De'Aaron Fox": {
+    "team": "SAS",
+    "position": "PG",
+    "games_played": 33,
+    "points": 20.5,
+    "rebounds": 4.2,
+    "assists": 5.9,
+    "threes": 2.0,
+    "minutes": 32.4
+  },
+  "Nickeil Alexander-Walker": {
+    "team": "ATL",
+    "position": "SG",
+    "games_played": 42,
+    "points": 20.4,
+    "rebounds": 3.6,
+    "assists": 3.4,
+    "threes": 3.0,
+    "minutes": 32.8
+  },
+  "Anthony Davis": {
+    "team": "DAL",
+    "position": "PF",
+    "games_played": 20,
+    "points": 20.4,
+    "rebounds": 11.1,
+    "assists": 2.8,
+    "threes": 0.5,
+    "minutes": 31.3
+  },
+  "LaMelo Ball": {
+    "team": "CHO",
+    "position": "PG",
+    "games_played": 32,
+    "points": 20.2,
+    "rebounds": 5.2,
+    "assists": 7.6,
+    "threes": 3.5,
+    "minutes": 27.7
+  },
+  "Jimmy Butler": {
+    "team": "GSW",
+    "position": "SF",
+    "games_played": 37,
+    "points": 20.1,
+    "rebounds": 5.6,
+    "assists": 4.9,
+    "threes": 0.9,
+    "minutes": 31.4
+  },
+  "Jerami Grant": {
+    "team": "POR",
+    "position": "PF",
+    "games_played": 28,
+    "points": 19.9,
+    "rebounds": 3.9,
+    "assists": 2.6,
+    "threes": 2.5,
+    "minutes": 29.8
+  },
+  "Zach LaVine": {
+    "team": "SAC",
+    "position": "SG",
+    "games_played": 30,
+    "points": 19.9,
+    "rebounds": 3.1,
+    "assists": 2.3,
+    "threes": 2.7,
+    "minutes": 32.8
+  },
+  "Brandon Miller": {
+    "team": "CHO",
+    "position": "SF",
+    "games_played": 25,
+    "points": 19.7,
+    "rebounds": 4.3,
+    "assists": 3.5,
+    "threes": 2.8,
+    "minutes": 30.2
+  },
+  "RJ Barrett": {
+    "team": "TOR",
+    "position": "SF",
+    "games_played": 23,
+    "points": 19.6,
+    "rebounds": 5.0,
+    "assists": 3.7,
+    "threes": 1.9,
+    "minutes": 30.3
+  },
+  "Scottie Barnes": {
+    "team": "TOR",
+    "position": "PF",
+    "games_played": 42,
+    "points": 19.5,
+    "rebounds": 8.2,
+    "assists": 5.5,
+    "threes": 1.1,
+    "minutes": 34.5
+  },
+  "Miles Bridges": {
+    "team": "CHO",
+    "position": "PF",
+    "games_played": 41,
+    "points": 19.4,
+    "rebounds": 6.4,
+    "assists": 3.6,
+    "threes": 2.3,
+    "minutes": 33.3
+  },
+  "Trae Young": {
+    "team": "ATL",
+    "position": "PG",
+    "games_played": 10,
+    "points": 19.3,
+    "rebounds": 1.5,
+    "assists": 8.9,
+    "threes": 1.8,
+    "minutes": 28.0
+  },
+  "Josh Giddey": {
+    "team": "CHI",
+    "position": "PG",
+    "games_played": 30,
+    "points": 19.2,
+    "rebounds": 8.9,
+    "assists": 9.0,
+    "threes": 1.9,
+    "minutes": 32.8
+  },
+  "Kon Knueppel": {
+    "team": "CHO",
+    "position": "SF",
+    "games_played": 41,
+    "points": 19.2,
+    "rebounds": 5.3,
+    "assists": 3.6,
+    "threes": 3.4,
+    "minutes": 32.5
+  },
+  "DeMar DeRozan": {
+    "team": "SAC",
+    "position": "PF",
+    "games_played": 42,
+    "points": 19.1,
+    "rebounds": 3.3,
+    "assists": 3.9,
+    "threes": 0.8,
+    "minutes": 33.5
+  },
+  "Desmond Bane": {
+    "team": "ORL",
+    "position": "SG",
+    "games_played": 41,
+    "points": 19.0,
+    "rebounds": 4.5,
+    "assists": 4.5,
+    "threes": 1.7,
+    "minutes": 33.8
+  },
+  "Ja Morant": {
+    "team": "MEM",
+    "position": "PG",
+    "games_played": 18,
+    "points": 19.0,
+    "rebounds": 3.2,
+    "assists": 7.6,
+    "threes": 0.9,
+    "minutes": 28.3
+  },
+  "Cooper Flagg": {
+    "team": "DAL",
+    "position": "SF",
+    "games_played": 40,
+    "points": 18.8,
+    "rebounds": 6.3,
+    "assists": 4.2,
+    "threes": 1.0,
+    "minutes": 34.1
+  },
+  "Jaren Jackson Jr.": {
+    "team": "MEM",
+    "position": "C",
+    "games_played": 38,
+    "points": 18.8,
+    "rebounds": 5.5,
+    "assists": 1.9,
+    "threes": 1.7,
+    "minutes": 30.5
+  },
+  "CJ McCollum": {
+    "team": "2TM",
+    "position": "PG",
+    "games_played": 39,
+    "points": 18.6,
+    "rebounds": 3.5,
+    "assists": 3.6,
+    "threes": 2.5,
+    "minutes": 30.5
+  },
+  "Amen Thompson": {
+    "team": "HOU",
+    "position": "PG",
+    "games_played": 39,
+    "points": 18.5,
+    "rebounds": 7.7,
+    "assists": 5.1,
+    "threes": 0.4,
+    "minutes": 37.1
+  },
+  "Cam Thomas": {
+    "team": "BRK",
+    "position": "SG",
+    "games_played": 17,
+    "points": 18.1,
+    "rebounds": 1.7,
+    "assists": 2.7,
+    "threes": 1.9,
+    "minutes": 25.2
+  },
+  "Derrick White": {
+    "team": "BOS",
+    "position": "SG",
+    "games_played": 40,
+    "points": 18.1,
+    "rebounds": 4.5,
+    "assists": 5.4,
+    "threes": 3.1,
+    "minutes": 34.1
+  },
+  "Darius Garland": {
+    "team": "CLE",
+    "position": "PG",
+    "games_played": 26,
+    "points": 18.0,
+    "rebounds": 2.4,
+    "assists": 6.9,
+    "threes": 2.3,
+    "minutes": 30.5
+  },
+  "Aaron Gordon": {
+    "team": "DEN",
+    "position": "PF",
+    "games_played": 20,
+    "points": 18.0,
+    "rebounds": 6.4,
+    "assists": 2.3,
+    "threes": 1.9,
+    "minutes": 28.1
+  },
+  "Coby White": {
+    "team": "CHI",
+    "position": "SG",
+    "games_played": 20,
+    "points": 17.9,
+    "rebounds": 3.6,
+    "assists": 4.6,
+    "threes": 2.1,
+    "minutes": 28.4
+  },
+  "Jalen Duren": {
+    "team": "DET",
+    "position": "C",
+    "games_played": 33,
+    "points": 17.8,
+    "rebounds": 10.8,
+    "assists": 1.8,
+    "threes": 0.0,
+    "minutes": 28.2
+  },
+  "Chet Holmgren": {
+    "team": "OKC",
+    "position": "PF",
+    "games_played": 37,
+    "points": 17.8,
+    "rebounds": 8.5,
+    "assists": 1.6,
+    "threes": 1.3,
+    "minutes": 29.0
+  },
+  "Bennedict Mathurin": {
+    "team": "IND",
+    "position": "SF",
+    "games_played": 24,
+    "points": 17.8,
+    "rebounds": 5.5,
+    "assists": 2.2,
+    "threes": 2.2,
+    "minutes": 32.2
+  },
+  "Evan Mobley": {
+    "team": "CLE",
+    "position": "PF",
+    "games_played": 37,
+    "points": 17.8,
+    "rebounds": 8.6,
+    "assists": 4.1,
+    "threes": 1.2,
+    "minutes": 33.3
+  },
+  "Bam Adebayo": {
+    "team": "MIA",
+    "position": "C",
+    "games_played": 34,
+    "points": 17.4,
+    "rebounds": 9.6,
+    "assists": 2.8,
+    "threes": 1.5,
+    "minutes": 30.9
+  },
+  "Andrew Nembhard": {
+    "team": "IND",
+    "position": "PG",
+    "games_played": 33,
+    "points": 17.4,
+    "rebounds": 2.6,
+    "assists": 7.2,
+    "threes": 1.8,
+    "minutes": 31.8
+  },
+  "Kevin Porter Jr.": {
+    "team": "MIL",
+    "position": "PG",
+    "games_played": 22,
+    "points": 17.1,
+    "rebounds": 5.0,
+    "assists": 7.5,
+    "threes": 1.7,
+    "minutes": 33.9
+  },
+  "Kristaps Porzi\u00c5\u0086\u00c4\u00a3is": {
+    "team": "ATL",
+    "position": "C",
+    "games_played": 17,
+    "points": 17.1,
+    "rebounds": 5.1,
+    "assists": 2.7,
+    "threes": 1.8,
+    "minutes": 24.3
+  },
+  "Stephon Castle": {
+    "team": "SAS",
+    "position": "PG",
+    "games_played": 33,
+    "points": 17.0,
+    "rebounds": 5.0,
+    "assists": 7.0,
+    "threes": 1.1,
+    "minutes": 30.7
+  },
+  "Nikola Vu\u00c4\u008devi\u00c4\u0087": {
+    "team": "CHI",
+    "position": "C",
+    "games_played": 40,
+    "points": 17.0,
+    "rebounds": 9.1,
+    "assists": 3.7,
+    "threes": 1.8,
+    "minutes": 30.7
+  },
+  "Alex Sarr": {
+    "team": "WAS",
+    "position": "C",
+    "games_played": 32,
+    "points": 16.9,
+    "rebounds": 7.5,
+    "assists": 2.8,
+    "threes": 0.9,
+    "minutes": 27.7
+  },
+  "Domantas Sabonis": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 12,
+    "points": 16.8,
+    "rebounds": 11.8,
+    "assists": 3.8,
+    "threes": 0.3,
+    "minutes": 32.2
+  },
+  "Jalen Williams": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 24,
+    "points": 16.8,
+    "rebounds": 4.8,
+    "assists": 5.6,
+    "threes": 0.8,
+    "minutes": 29.6
+  },
+  "Payton Pritchard": {
+    "team": "BOS",
+    "position": "PG",
+    "games_played": 40,
+    "points": 16.6,
+    "rebounds": 4.5,
+    "assists": 5.4,
+    "threes": 2.5,
+    "minutes": 32.7
+  },
+  "Immanuel Quickley": {
+    "team": "TOR",
+    "position": "PG",
+    "games_played": 40,
+    "points": 16.5,
+    "rebounds": 4.2,
+    "assists": 6.1,
+    "threes": 2.5,
+    "minutes": 32.5
+  },
+  "Grayson Allen": {
+    "team": "PHO",
+    "position": "SG",
+    "games_played": 25,
+    "points": 16.4,
+    "rebounds": 2.8,
+    "assists": 3.5,
+    "threes": 3.4,
+    "minutes": 29.4
+  },
+  "Onyeka Okongwu": {
+    "team": "ATL",
+    "position": "C",
+    "games_played": 42,
+    "points": 16.4,
+    "rebounds": 7.9,
+    "assists": 3.4,
+    "threes": 2.0,
+    "minutes": 32.0
+  },
+  "Ryan Rollins": {
+    "team": "MIL",
+    "position": "PG",
+    "games_played": 41,
+    "points": 16.2,
+    "rebounds": 4.6,
+    "assists": 5.5,
+    "threes": 2.3,
+    "minutes": 31.6
+  },
+  "Mikal Bridges": {
+    "team": "NYK",
+    "position": "SF",
+    "games_played": 42,
+    "points": 16.1,
+    "rebounds": 4.5,
+    "assists": 4.2,
+    "threes": 2.3,
+    "minutes": 35.0
+  },
+  "OG Anunoby": {
+    "team": "NYK",
+    "position": "PF",
+    "games_played": 32,
+    "points": 16.0,
+    "rebounds": 5.5,
+    "assists": 2.2,
+    "threes": 1.9,
+    "minutes": 32.8
+  },
+  "Paul George": {
+    "team": "PHI",
+    "position": "PF",
+    "games_played": 23,
+    "points": 15.9,
+    "rebounds": 5.2,
+    "assists": 3.7,
+    "threes": 2.3,
+    "minutes": 29.8
+  },
+  "Jaime Jaquez Jr.": {
+    "team": "MIA",
+    "position": "SF",
+    "games_played": 37,
+    "points": 15.9,
+    "rebounds": 5.1,
+    "assists": 4.6,
+    "threes": 0.4,
+    "minutes": 28.8
+  },
+  "Anthony Black": {
+    "team": "ORL",
+    "position": "PG",
+    "games_played": 41,
+    "points": 15.8,
+    "rebounds": 4.1,
+    "assists": 4.0,
+    "threes": 1.6,
+    "minutes": 30.4
+  },
+  "Andrew Wiggins": {
+    "team": "MIA",
+    "position": "SF",
+    "games_played": 38,
+    "points": 15.8,
+    "rebounds": 4.9,
+    "assists": 2.9,
+    "threes": 1.9,
+    "minutes": 31.8
+  },
+  "VJ Edgecombe": {
+    "team": "PHI",
+    "position": "SG",
+    "games_played": 36,
+    "points": 15.7,
+    "rebounds": 5.3,
+    "assists": 4.3,
+    "threes": 2.3,
+    "minutes": 35.8
+  },
+  "Jalen Green": {
+    "team": "PHO",
+    "position": "SG",
+    "games_played": 2,
+    "points": 15.5,
+    "rebounds": 2.0,
+    "assists": 2.0,
+    "threes": 3.0,
+    "minutes": 15.0
+  },
+  "Kyshawn George": {
+    "team": "WAS",
+    "position": "SF",
+    "games_played": 32,
+    "points": 15.4,
+    "rebounds": 5.6,
+    "assists": 4.9,
+    "threes": 2.2,
+    "minutes": 31.2
+  },
+  "Saddiq Bey": {
+    "team": "NOP",
+    "position": "SF",
+    "games_played": 37,
+    "points": 15.2,
+    "rebounds": 5.7,
+    "assists": 2.2,
+    "threes": 1.6,
+    "minutes": 29.9
+  },
+  "Jrue Holiday": {
+    "team": "POR",
+    "position": "PG",
+    "games_played": 16,
+    "points": 15.1,
+    "rebounds": 5.0,
+    "assists": 7.1,
+    "threes": 2.3,
+    "minutes": 29.9
+  },
+  "Russell Westbrook": {
+    "team": "SAC",
+    "position": "SF",
+    "games_played": 42,
+    "points": 15.1,
+    "rebounds": 6.4,
+    "assists": 7.0,
+    "threes": 2.0,
+    "minutes": 29.5
+  },
+  "Jaden McDaniels": {
+    "team": "MIN",
+    "position": "PF",
+    "games_played": 41,
+    "points": 15.0,
+    "rebounds": 4.5,
+    "assists": 2.8,
+    "threes": 1.4,
+    "minutes": 32.1
+  },
+  "Jordan Poole": {
+    "team": "NOP",
+    "position": "PG",
+    "games_played": 25,
+    "points": 15.0,
+    "rebounds": 1.6,
+    "assists": 3.2,
+    "threes": 2.7,
+    "minutes": 25.8
+  },
+  "Jabari Smith Jr.": {
+    "team": "HOU",
+    "position": "PF",
+    "games_played": 38,
+    "points": 15.0,
+    "rebounds": 6.9,
+    "assists": 1.8,
+    "threes": 2.1,
+    "minutes": 34.7
+  },
+  "Jalen Suggs": {
+    "team": "ORL",
+    "position": "PG",
+    "games_played": 23,
+    "points": 15.0,
+    "rebounds": 3.7,
+    "assists": 4.7,
+    "threes": 1.9,
+    "minutes": 25.4
+  },
+  "Devin Vassell": {
+    "team": "SAS",
+    "position": "SG",
+    "games_played": 32,
+    "points": 15.0,
+    "rebounds": 4.0,
+    "assists": 2.4,
+    "threes": 2.7,
+    "minutes": 31.9
+  },
+  "Collin Sexton": {
+    "team": "CHO",
+    "position": "SG",
+    "games_played": 33,
+    "points": 14.9,
+    "rebounds": 2.0,
+    "assists": 4.1,
+    "threes": 1.3,
+    "minutes": 23.6
+  },
+  "Ivica Zubac": {
+    "team": "LAC",
+    "position": "C",
+    "games_played": 35,
+    "points": 14.9,
+    "rebounds": 10.8,
+    "assists": 2.4,
+    "threes": 0.0,
+    "minutes": 31.5
+  },
+  "Matas Buzelis": {
+    "team": "CHI",
+    "position": "PF",
+    "games_played": 41,
+    "points": 14.8,
+    "rebounds": 5.2,
+    "assists": 1.7,
+    "threes": 1.8,
+    "minutes": 27.8
+  },
+  "Keegan Murray": {
+    "team": "SAC",
+    "position": "PF",
+    "games_played": 19,
+    "points": 14.6,
+    "rebounds": 6.1,
+    "assists": 1.5,
+    "threes": 1.3,
+    "minutes": 35.9
+  },
+  "P.J. Washington": {
+    "team": "DAL",
+    "position": "PF",
+    "games_played": 31,
+    "points": 14.6,
+    "rebounds": 7.4,
+    "assists": 1.9,
+    "threes": 1.3,
+    "minutes": 31.4
+  },
+  "Naz Reid": {
+    "team": "MIN",
+    "position": "C",
+    "games_played": 43,
+    "points": 14.5,
+    "rebounds": 6.1,
+    "assists": 2.4,
+    "threes": 2.4,
+    "minutes": 26.2
+  },
+  "Ayo Dosunmu": {
+    "team": "CHI",
+    "position": "SG",
+    "games_played": 35,
+    "points": 14.4,
+    "rebounds": 2.7,
+    "assists": 3.5,
+    "threes": 1.8,
+    "minutes": 26.0
+  },
+  "Walker Kessler": {
+    "team": "UTA",
+    "position": "C",
+    "games_played": 5,
+    "points": 14.4,
+    "rebounds": 10.8,
+    "assists": 3.0,
+    "threes": 1.2,
+    "minutes": 30.8
+  },
+  "Jeremiah Fears": {
+    "team": "NOP",
+    "position": "PG",
+    "games_played": 44,
+    "points": 14.2,
+    "rebounds": 3.7,
+    "assists": 3.2,
+    "threes": 1.1,
+    "minutes": 26.9
+  },
+  "Tim Hardaway Jr.": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 41,
+    "points": 14.2,
+    "rebounds": 2.4,
+    "assists": 1.4,
+    "threes": 2.9,
+    "minutes": 27.6
+  },
+  "Ajay Mitchell": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 41,
+    "points": 14.2,
+    "rebounds": 3.5,
+    "assists": 3.6,
+    "threes": 1.1,
+    "minutes": 26.3
+  },
+  "Santi Aldama": {
+    "team": "MEM",
+    "position": "PF",
+    "games_played": 40,
+    "points": 14.1,
+    "rebounds": 6.7,
+    "assists": 3.0,
+    "threes": 1.7,
+    "minutes": 28.0
+  },
+  "De'Andre Hunter": {
+    "team": "CLE",
+    "position": "SF",
+    "games_played": 38,
+    "points": 14.1,
+    "rebounds": 4.3,
+    "assists": 2.2,
+    "threes": 1.7,
+    "minutes": 26.9
+  },
+  "Naji Marshall": {
+    "team": "DAL",
+    "position": "SF",
+    "games_played": 43,
+    "points": 14.1,
+    "rebounds": 4.6,
+    "assists": 2.9,
+    "threes": 0.9,
+    "minutes": 28.8
+  },
+  "Anfernee Simons": {
+    "team": "BOS",
+    "position": "SG",
+    "games_played": 41,
+    "points": 14.1,
+    "rebounds": 2.4,
+    "assists": 2.5,
+    "threes": 2.7,
+    "minutes": 24.2
+  },
+  "Cedric Coward": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 37,
+    "points": 14.0,
+    "rebounds": 6.6,
+    "assists": 2.9,
+    "threes": 1.6,
+    "minutes": 26.7
+  },
+  "Quentin Grimes": {
+    "team": "PHI",
+    "position": "SG",
+    "games_played": 38,
+    "points": 14.0,
+    "rebounds": 4.0,
+    "assists": 3.8,
+    "threes": 2.2,
+    "minutes": 31.6
+  },
+  "Obi Toppin": {
+    "team": "IND",
+    "position": "PF",
+    "games_played": 3,
+    "points": 14.0,
+    "rebounds": 6.7,
+    "assists": 1.7,
+    "threes": 1.0,
+    "minutes": 27.3
+  },
+  "Peyton Watson": {
+    "team": "DEN",
+    "position": "SF",
+    "games_played": 40,
+    "points": 14.0,
+    "rebounds": 5.0,
+    "assists": 1.9,
+    "threes": 1.4,
+    "minutes": 29.5
+  },
+  "Deandre Ayton": {
+    "team": "LAL",
+    "position": "C",
+    "games_played": 35,
+    "points": 13.9,
+    "rebounds": 8.7,
+    "assists": 0.9,
+    "threes": 0.0,
+    "minutes": 29.4
+  },
+  "Sam Merrill": {
+    "team": "CLE",
+    "position": "SG",
+    "games_played": 24,
+    "points": 13.8,
+    "rebounds": 2.4,
+    "assists": 2.3,
+    "threes": 3.5,
+    "minutes": 25.8
+  },
+  "Aaron Nesmith": {
+    "team": "IND",
+    "position": "SF",
+    "games_played": 22,
+    "points": 13.7,
+    "rebounds": 5.0,
+    "assists": 2.0,
+    "threes": 2.6,
+    "minutes": 30.2
+  },
+  "Zach Edey": {
+    "team": "MEM",
+    "position": "C",
+    "games_played": 11,
+    "points": 13.6,
+    "rebounds": 11.1,
+    "assists": 1.1,
+    "threes": 0.1,
+    "minutes": 25.8
+  },
+  "Keldon Johnson": {
+    "team": "SAS",
+    "position": "SF",
+    "games_played": 42,
+    "points": 13.6,
+    "rebounds": 6.2,
+    "assists": 1.3,
+    "threes": 1.3,
+    "minutes": 23.7
+  },
+  "Jarrett Allen": {
+    "team": "CLE",
+    "position": "C",
+    "games_played": 31,
+    "points": 13.4,
+    "rebounds": 7.8,
+    "assists": 2.1,
+    "threes": 0.0,
+    "minutes": 26.6
+  },
+  "Miles McBride": {
+    "team": "NYK",
+    "position": "SG",
+    "games_played": 31,
+    "points": 13.4,
+    "rebounds": 2.5,
+    "assists": 2.7,
+    "threes": 3.1,
+    "minutes": 28.4
+  },
+  "Kelly Oubre Jr.": {
+    "team": "PHI",
+    "position": "SF",
+    "games_played": 18,
+    "points": 13.4,
+    "rebounds": 4.8,
+    "assists": 1.1,
+    "threes": 1.6,
+    "minutes": 31.6
+  },
+  "Jaylon Tyson": {
+    "team": "CLE",
+    "position": "SG",
+    "games_played": 38,
+    "points": 13.4,
+    "rebounds": 5.3,
+    "assists": 2.0,
+    "threes": 2.0,
+    "minutes": 27.2
+  },
+  "Noah Clowney": {
+    "team": "BRK",
+    "position": "PF",
+    "games_played": 39,
+    "points": 13.3,
+    "rebounds": 4.1,
+    "assists": 1.9,
+    "threes": 2.1,
+    "minutes": 28.5
+  },
+  "Tobias Harris": {
+    "team": "DET",
+    "position": "PF",
+    "games_played": 25,
+    "points": 13.3,
+    "rebounds": 4.7,
+    "assists": 2.5,
+    "threes": 1.3,
+    "minutes": 27.1
+  },
+  "Donte DiVincenzo": {
+    "team": "MIN",
+    "position": "SG",
+    "games_played": 43,
+    "points": 13.2,
+    "rebounds": 4.6,
+    "assists": 4.2,
+    "threes": 3.0,
+    "minutes": 31.8
+  },
+  "Collin Gillespie": {
+    "team": "PHO",
+    "position": "PG",
+    "games_played": 42,
+    "points": 13.2,
+    "rebounds": 4.1,
+    "assists": 4.9,
+    "threes": 2.9,
+    "minutes": 28.1
+  },
+  "John Collins": {
+    "team": "LAC",
+    "position": "PF",
+    "games_played": 38,
+    "points": 13.1,
+    "rebounds": 5.0,
+    "assists": 0.8,
+    "threes": 1.3,
+    "minutes": 27.5
+  },
+  "Bobby Portis": {
+    "team": "MIL",
+    "position": "PF",
+    "games_played": 41,
+    "points": 13.0,
+    "rebounds": 6.5,
+    "assists": 1.3,
+    "threes": 1.9,
+    "minutes": 23.3
+  },
+  "Dennis Schr\u00c3\u00b6der": {
+    "team": "SAC",
+    "position": "PG",
+    "games_played": 32,
+    "points": 13.0,
+    "rebounds": 3.2,
+    "assists": 5.7,
+    "threes": 1.5,
+    "minutes": 27.0
+  },
+  "Nic Claxton": {
+    "team": "BRK",
+    "position": "C",
+    "games_played": 37,
+    "points": 12.9,
+    "rebounds": 7.6,
+    "assists": 4.1,
+    "threes": 0.1,
+    "minutes": 29.7
+  },
+  "Toumani Camara": {
+    "team": "POR",
+    "position": "PF",
+    "games_played": 43,
+    "points": 12.8,
+    "rebounds": 5.0,
+    "assists": 2.6,
+    "threes": 2.5,
+    "minutes": 33.7
+  },
+  "Reed Sheppard": {
+    "team": "HOU",
+    "position": "SG",
+    "games_played": 39,
+    "points": 12.8,
+    "rebounds": 2.6,
+    "assists": 3.2,
+    "threes": 2.5,
+    "minutes": 25.1
+  },
+  "Kyle Kuzma": {
+    "team": "MIL",
+    "position": "PF",
+    "games_played": 39,
+    "points": 12.6,
+    "rebounds": 4.6,
+    "assists": 2.2,
+    "threes": 0.9,
+    "minutes": 25.9
+  },
+  "Derik Queen": {
+    "team": "NOP",
+    "position": "C",
+    "games_played": 43,
+    "points": 12.6,
+    "rebounds": 7.6,
+    "assists": 4.3,
+    "threes": 0.2,
+    "minutes": 26.0
+  },
+  "Max Christie": {
+    "team": "DAL",
+    "position": "SG",
+    "games_played": 39,
+    "points": 12.5,
+    "rebounds": 3.4,
+    "assists": 2.2,
+    "threes": 2.4,
+    "minutes": 28.9
+  },
+  "Tre Jones": {
+    "team": "CHI",
+    "position": "PG",
+    "games_played": 35,
+    "points": 12.4,
+    "rebounds": 2.9,
+    "assists": 5.6,
+    "threes": 0.5,
+    "minutes": 26.9
+  },
+  "Wendell Carter Jr.": {
+    "team": "ORL",
+    "position": "C",
+    "games_played": 39,
+    "points": 12.3,
+    "rebounds": 7.7,
+    "assists": 2.1,
+    "threes": 1.2,
+    "minutes": 30.3
+  },
+  "Tre Johnson": {
+    "team": "WAS",
+    "position": "SG",
+    "games_played": 34,
+    "points": 12.3,
+    "rebounds": 2.9,
+    "assists": 1.9,
+    "threes": 2.0,
+    "minutes": 24.6
+  },
+  "Mark Williams": {
+    "team": "PHO",
+    "position": "C",
+    "games_played": 37,
+    "points": 12.3,
+    "rebounds": 8.3,
+    "assists": 1.1,
+    "threes": 0.0,
+    "minutes": 24.0
+  },
+  "Rui Hachimura": {
+    "team": "LAL",
+    "position": "PF",
+    "games_played": 30,
+    "points": 12.2,
+    "rebounds": 3.5,
+    "assists": 0.9,
+    "threes": 1.7,
+    "minutes": 31.1
+  },
+  "Myles Turner": {
+    "team": "MIL",
+    "position": "C",
+    "games_played": 40,
+    "points": 12.2,
+    "rebounds": 5.3,
+    "assists": 1.6,
+    "threes": 2.2,
+    "minutes": 28.3
+  },
+  "Brandon Williams": {
+    "team": "DAL",
+    "position": "PG",
+    "games_played": 37,
+    "points": 12.2,
+    "rebounds": 2.9,
+    "assists": 3.7,
+    "threes": 0.5,
+    "minutes": 22.4
+  },
+  "Josh Hart": {
+    "team": "NYK",
+    "position": "SF",
+    "games_played": 31,
+    "points": 12.1,
+    "rebounds": 7.7,
+    "assists": 5.3,
+    "threes": 1.6,
+    "minutes": 30.6
+  },
+  "Duncan Robinson": {
+    "team": "DET",
+    "position": "SF",
+    "games_played": 38,
+    "points": 12.1,
+    "rebounds": 2.7,
+    "assists": 1.9,
+    "threes": 2.9,
+    "minutes": 28.8
+  },
+  "Tari Eason": {
+    "team": "HOU",
+    "position": "PF",
+    "games_played": 21,
+    "points": 12.0,
+    "rebounds": 6.0,
+    "assists": 1.6,
+    "threes": 2.1,
+    "minutes": 23.7
+  },
+  "Brandin Podziemski": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 43,
+    "points": 12.0,
+    "rebounds": 4.4,
+    "assists": 3.2,
+    "threes": 1.8,
+    "minutes": 26.7
+  },
+  "Klay Thompson": {
+    "team": "DAL",
+    "position": "SF",
+    "games_played": 40,
+    "points": 12.0,
+    "rebounds": 2.4,
+    "assists": 1.5,
+    "threes": 3.0,
+    "minutes": 22.2
+  },
+  "Jonathan Kuminga": {
+    "team": "GSW",
+    "position": "PF",
+    "games_played": 18,
+    "points": 11.8,
+    "rebounds": 6.2,
+    "assists": 2.6,
+    "threes": 0.9,
+    "minutes": 24.8
+  },
+  "Cam Spencer": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 39,
+    "points": 11.8,
+    "rebounds": 2.7,
+    "assists": 5.5,
+    "threes": 2.3,
+    "minutes": 23.9
+  },
+  "Jaylen Wells": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 40,
+    "points": 11.8,
+    "rebounds": 3.5,
+    "assists": 1.8,
+    "threes": 1.7,
+    "minutes": 27.2
+  },
+  "Dyson Daniels": {
+    "team": "ATL",
+    "position": "SG",
+    "games_played": 42,
+    "points": 11.7,
+    "rebounds": 6.6,
+    "assists": 6.1,
+    "threes": 0.2,
+    "minutes": 34.1
+  },
+  "Cameron Johnson": {
+    "team": "DEN",
+    "position": "SF",
+    "games_played": 28,
+    "points": 11.7,
+    "rebounds": 3.6,
+    "assists": 2.4,
+    "threes": 1.9,
+    "minutes": 30.6
+  },
+  "Brice Sensabaugh": {
+    "team": "UTA",
+    "position": "SF",
+    "games_played": 41,
+    "points": 11.7,
+    "rebounds": 3.0,
+    "assists": 1.5,
+    "threes": 1.6,
+    "minutes": 20.9
+  },
+  "Malik Monk": {
+    "team": "SAC",
+    "position": "SG",
+    "games_played": 34,
+    "points": 11.6,
+    "rebounds": 2.0,
+    "assists": 2.4,
+    "threes": 1.8,
+    "minutes": 21.7
+  },
+  "Kel'el Ware": {
+    "team": "MIA",
+    "position": "C",
+    "games_played": 42,
+    "points": 11.5,
+    "rebounds": 9.9,
+    "assists": 0.5,
+    "threes": 1.2,
+    "minutes": 23.9
+  },
+  "Kevin Huerter": {
+    "team": "CHI",
+    "position": "SF",
+    "games_played": 36,
+    "points": 11.4,
+    "rebounds": 3.7,
+    "assists": 2.4,
+    "threes": 1.6,
+    "minutes": 23.9
+  },
+  "Julian Champagnie": {
+    "team": "SAS",
+    "position": "SF",
+    "games_played": 42,
+    "points": 11.2,
+    "rebounds": 6.3,
+    "assists": 1.5,
+    "threes": 2.4,
+    "minutes": 28.4
+  },
+  "Isaiah Hartenstein": {
+    "team": "OKC",
+    "position": "C",
+    "games_played": 24,
+    "points": 11.2,
+    "rebounds": 10.4,
+    "assists": 3.0,
+    "threes": 0.0,
+    "minutes": 26.9
+  },
+  "Caleb Love": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 35,
+    "points": 11.2,
+    "rebounds": 2.7,
+    "assists": 2.6,
+    "threes": 2.1,
+    "minutes": 21.9
+  },
+  "Zaccharie Risacher": {
+    "team": "ATL",
+    "position": "SF",
+    "games_played": 36,
+    "points": 11.2,
+    "rebounds": 3.3,
+    "assists": 1.4,
+    "threes": 1.6,
+    "minutes": 24.6
+  },
+  "Donovan Clingan": {
+    "team": "POR",
+    "position": "C",
+    "games_played": 39,
+    "points": 11.1,
+    "rebounds": 10.7,
+    "assists": 1.9,
+    "threes": 0.9,
+    "minutes": 27.1
+  },
+  "Harrison Barnes": {
+    "team": "SAS",
+    "position": "PF",
+    "games_played": 42,
+    "points": 11.0,
+    "rebounds": 3.1,
+    "assists": 2.1,
+    "threes": 1.9,
+    "minutes": 28.6
+  },
+  "Rudy Gobert": {
+    "team": "MIN",
+    "position": "C",
+    "games_played": 41,
+    "points": 11.0,
+    "rebounds": 11.4,
+    "assists": 1.8,
+    "threes": 0.0,
+    "minutes": 31.7
+  },
+  "Jock Landale": {
+    "team": "MEM",
+    "position": "C",
+    "games_played": 38,
+    "points": 11.0,
+    "rebounds": 6.2,
+    "assists": 1.7,
+    "threes": 1.1,
+    "minutes": 22.8
+  },
+  "De'Anthony Melton": {
+    "team": "GSW",
+    "position": "PG",
+    "games_played": 18,
+    "points": 11.0,
+    "rebounds": 2.7,
+    "assists": 1.8,
+    "threes": 1.4,
+    "minutes": 20.7
+  },
+  "Ausar Thompson": {
+    "team": "DET",
+    "position": "SF",
+    "games_played": 36,
+    "points": 10.9,
+    "rebounds": 5.8,
+    "assists": 2.6,
+    "threes": 0.1,
+    "minutes": 25.9
+  },
+  "Moses Moody": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 41,
+    "points": 10.6,
+    "rebounds": 3.0,
+    "assists": 1.5,
+    "threes": 2.2,
+    "minutes": 24.5
+  },
+  "Dylan Harper": {
+    "team": "SAS",
+    "position": "SG",
+    "games_played": 32,
+    "points": 10.5,
+    "rebounds": 3.2,
+    "assists": 3.5,
+    "threes": 0.7,
+    "minutes": 21.4
+  },
+  "Royce O'Neale": {
+    "team": "PHO",
+    "position": "SF",
+    "games_played": 42,
+    "points": 10.5,
+    "rebounds": 5.1,
+    "assists": 2.9,
+    "threes": 2.9,
+    "minutes": 29.5
+  },
+  "Egor D\u00d1\u0091min": {
+    "team": "BRK",
+    "position": "PG",
+    "games_played": 35,
+    "points": 10.4,
+    "rebounds": 3.1,
+    "assists": 3.5,
+    "threes": 2.4,
+    "minutes": 24.7
+  },
+  "Derrick Jones Jr.": {
+    "team": "LAC",
+    "position": "SF",
+    "games_played": 17,
+    "points": 10.4,
+    "rebounds": 2.6,
+    "assists": 1.2,
+    "threes": 1.3,
+    "minutes": 24.2
+  },
+  "Jusuf Nurki\u00c4\u0087": {
+    "team": "UTA",
+    "position": "C",
+    "games_played": 32,
+    "points": 10.4,
+    "rebounds": 10.0,
+    "assists": 4.3,
+    "threes": 0.6,
+    "minutes": 25.9
+  },
+  "Ace Bailey": {
+    "team": "UTA",
+    "position": "SF",
+    "games_played": 35,
+    "points": 10.3,
+    "rebounds": 3.4,
+    "assists": 1.6,
+    "threes": 1.4,
+    "minutes": 23.9
+  },
+  "Sandro Mamukelashvili": {
+    "team": "TOR",
+    "position": "C",
+    "games_played": 41,
+    "points": 10.3,
+    "rebounds": 4.8,
+    "assists": 1.9,
+    "threes": 1.2,
+    "minutes": 21.4
+  },
+  "Maxime Raynaud": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 34,
+    "points": 10.3,
+    "rebounds": 6.4,
+    "assists": 1.2,
+    "threes": 0.2,
+    "minutes": 23.6
+  },
+  "Aaron Wiggins": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 30,
+    "points": 10.3,
+    "rebounds": 3.3,
+    "assists": 1.7,
+    "threes": 1.8,
+    "minutes": 22.9
+  },
+  "A.J. Green": {
+    "team": "MIL",
+    "position": "SG",
+    "games_played": 38,
+    "points": 10.2,
+    "rebounds": 2.6,
+    "assists": 2.1,
+    "threes": 2.9,
+    "minutes": 29.2
+  },
+  "Neemias Queta": {
+    "team": "BOS",
+    "position": "C",
+    "games_played": 39,
+    "points": 10.2,
+    "rebounds": 8.2,
+    "assists": 1.4,
+    "threes": 0.0,
+    "minutes": 24.7
+  },
+  "D'Angelo Russell": {
+    "team": "DAL",
+    "position": "PG",
+    "games_played": 26,
+    "points": 10.2,
+    "rebounds": 2.3,
+    "assists": 4.0,
+    "threes": 1.3,
+    "minutes": 19.0
+  },
+  "Isaiah Stewart": {
+    "team": "DET",
+    "position": "C",
+    "games_played": 36,
+    "points": 10.2,
+    "rebounds": 5.6,
+    "assists": 1.2,
+    "threes": 0.9,
+    "minutes": 23.6
+  },
+  "Marvin Bagley III": {
+    "team": "WAS",
+    "position": "PF",
+    "games_played": 35,
+    "points": 10.1,
+    "rebounds": 5.6,
+    "assists": 1.5,
+    "threes": 0.2,
+    "minutes": 19.4
+  },
+  "Bilal Coulibaly": {
+    "team": "WAS",
+    "position": "SG",
+    "games_played": 25,
+    "points": 10.1,
+    "rebounds": 4.7,
+    "assists": 2.5,
+    "threes": 1.0,
+    "minutes": 26.6
+  },
+  "Jordan Clarkson": {
+    "team": "NYK",
+    "position": "SG",
+    "games_played": 42,
+    "points": 9.9,
+    "rebounds": 1.9,
+    "assists": 1.3,
+    "threes": 1.4,
+    "minutes": 20.1
+  },
+  "T.J. McConnell": {
+    "team": "IND",
+    "position": "PG",
+    "games_played": 30,
+    "points": 9.9,
+    "rebounds": 2.3,
+    "assists": 5.1,
+    "threes": 0.4,
+    "minutes": 17.4
+  },
+  "Marcus Smart": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 31,
+    "points": 9.9,
+    "rebounds": 3.1,
+    "assists": 2.9,
+    "threes": 1.6,
+    "minutes": 28.5
+  },
+  "Tristan Da Silva": {
+    "team": "ORL",
+    "position": "SF",
+    "games_played": 36,
+    "points": 9.8,
+    "rebounds": 3.6,
+    "assists": 1.2,
+    "threes": 1.6,
+    "minutes": 23.2
+  },
+  "Vit Krejci": {
+    "team": "ATL",
+    "position": "PG",
+    "games_played": 40,
+    "points": 9.8,
+    "rebounds": 2.3,
+    "assists": 1.6,
+    "threes": 2.5,
+    "minutes": 23.8
+  },
+  "Jake LaRavia": {
+    "team": "LAL",
+    "position": "PF",
+    "games_played": 40,
+    "points": 9.8,
+    "rebounds": 4.3,
+    "assists": 2.1,
+    "threes": 1.2,
+    "minutes": 27.6
+  },
+  "Khris Middleton": {
+    "team": "WAS",
+    "position": "SF",
+    "games_played": 28,
+    "points": 9.8,
+    "rebounds": 4.0,
+    "assists": 3.3,
+    "threes": 0.9,
+    "minutes": 24.2
+  },
+  "Zach Collins": {
+    "team": "CHI",
+    "position": "C",
+    "games_played": 10,
+    "points": 9.7,
+    "rebounds": 5.6,
+    "assists": 1.5,
+    "threes": 0.9,
+    "minutes": 18.4
+  },
+  "Jakob Poeltl": {
+    "team": "TOR",
+    "position": "C",
+    "games_played": 21,
+    "points": 9.7,
+    "rebounds": 7.7,
+    "assists": 2.1,
+    "threes": 0.0,
+    "minutes": 25.3
+  },
+  "Christian Braun": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 14,
+    "points": 9.5,
+    "rebounds": 4.2,
+    "assists": 2.5,
+    "threes": 0.5,
+    "minutes": 28.9
+  },
+  "Bub Carrington": {
+    "team": "WAS",
+    "position": "PG",
+    "games_played": 41,
+    "points": 9.5,
+    "rebounds": 3.8,
+    "assists": 4.6,
+    "threes": 2.0,
+    "minutes": 28.1
+  },
+  "Isaiah Joe": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 34,
+    "points": 9.5,
+    "rebounds": 2.5,
+    "assists": 1.3,
+    "threes": 2.2,
+    "minutes": 19.3
+  },
+  "Herbert Jones": {
+    "team": "NOP",
+    "position": "SF",
+    "games_played": 23,
+    "points": 9.5,
+    "rebounds": 3.7,
+    "assists": 2.3,
+    "threes": 1.4,
+    "minutes": 28.3
+  },
+  "Jalen Smith": {
+    "team": "CHI",
+    "position": "C",
+    "games_played": 34,
+    "points": 9.4,
+    "rebounds": 6.7,
+    "assists": 1.3,
+    "threes": 1.4,
+    "minutes": 18.7
+  },
+  "Corey Kispert": {
+    "team": "2TM",
+    "position": "SF",
+    "games_played": 23,
+    "points": 9.3,
+    "rebounds": 2.4,
+    "assists": 1.6,
+    "threes": 1.6,
+    "minutes": 19.3
+  },
+  "Kyle Filipowski": {
+    "team": "UTA",
+    "position": "C",
+    "games_played": 41,
+    "points": 9.3,
+    "rebounds": 6.1,
+    "assists": 2.0,
+    "threes": 0.8,
+    "minutes": 22.1
+  },
+  "Pelle Larsson": {
+    "team": "MIA",
+    "position": "SG",
+    "games_played": 34,
+    "points": 9.3,
+    "rebounds": 2.7,
+    "assists": 3.1,
+    "threes": 1.0,
+    "minutes": 22.8
+  },
+  "Cam Whitmore": {
+    "team": "WAS",
+    "position": "SF",
+    "games_played": 21,
+    "points": 9.2,
+    "rebounds": 2.8,
+    "assists": 0.7,
+    "threes": 0.8,
+    "minutes": 16.9
+  },
+  "Davion Mitchell": {
+    "team": "MIA",
+    "position": "PG",
+    "games_played": 38,
+    "points": 9.1,
+    "rebounds": 2.5,
+    "assists": 7.3,
+    "threes": 1.1,
+    "minutes": 29.5
+  },
+  "Ziaire Williams": {
+    "team": "BRK",
+    "position": "SF",
+    "games_played": 29,
+    "points": 9.1,
+    "rebounds": 2.4,
+    "assists": 0.7,
+    "threes": 1.6,
+    "minutes": 22.6
+  },
+  "Svi Mykhailiuk": {
+    "team": "UTA",
+    "position": "SF",
+    "games_played": 35,
+    "points": 9.0,
+    "rebounds": 2.6,
+    "assists": 2.0,
+    "threes": 1.9,
+    "minutes": 24.8
+  },
+  "Jarace Walker": {
+    "team": "IND",
+    "position": "PF",
+    "games_played": 43,
+    "points": 9.0,
+    "rebounds": 4.2,
+    "assists": 1.9,
+    "threes": 1.6,
+    "minutes": 23.1
+  },
+  "Jordan Goodwin": {
+    "team": "PHO",
+    "position": "PG",
+    "games_played": 39,
+    "points": 8.9,
+    "rebounds": 4.8,
+    "assists": 2.3,
+    "threes": 1.5,
+    "minutes": 21.8
+  },
+  "Draymond Green": {
+    "team": "GSW",
+    "position": "PF",
+    "games_played": 36,
+    "points": 8.9,
+    "rebounds": 5.8,
+    "assists": 5.3,
+    "threes": 1.5,
+    "minutes": 26.9
+  },
+  "Landry Shamet": {
+    "team": "NYK",
+    "position": "SG",
+    "games_played": 17,
+    "points": 8.8,
+    "rebounds": 1.8,
+    "assists": 1.1,
+    "threes": 1.8,
+    "minutes": 20.3
+  },
+  "Jay Huff": {
+    "team": "IND",
+    "position": "C",
+    "games_played": 43,
+    "points": 8.7,
+    "rebounds": 3.8,
+    "assists": 1.3,
+    "threes": 1.4,
+    "minutes": 20.0
+  },
+  "Isaiah Collier": {
+    "team": "UTA",
+    "position": "PG",
+    "games_played": 34,
+    "points": 8.6,
+    "rebounds": 2.3,
+    "assists": 6.7,
+    "threes": 0.4,
+    "minutes": 23.2
+  },
+  "Sam Hauser": {
+    "team": "BOS",
+    "position": "PF",
+    "games_played": 40,
+    "points": 8.6,
+    "rebounds": 3.6,
+    "assists": 1.3,
+    "threes": 2.5,
+    "minutes": 22.9
+  },
+  "Isaac Okoro": {
+    "team": "CHI",
+    "position": "SG",
+    "games_played": 33,
+    "points": 8.6,
+    "rebounds": 2.7,
+    "assists": 1.5,
+    "threes": 1.1,
+    "minutes": 25.2
+  },
+  "Jaden Ivey": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 25,
+    "points": 8.5,
+    "rebounds": 2.2,
+    "assists": 1.7,
+    "threes": 1.1,
+    "minutes": 17.0
+  },
+  "Gary Trent Jr.": {
+    "team": "MIL",
+    "position": "SG",
+    "games_played": 39,
+    "points": 8.5,
+    "rebounds": 1.3,
+    "assists": 1.6,
+    "threes": 2.0,
+    "minutes": 24.6
+  },
+  "Jonas Valan\u00c4\u008di\u00c5\u00abnas": {
+    "team": "DEN",
+    "position": "C",
+    "games_played": 33,
+    "points": 8.5,
+    "rebounds": 4.7,
+    "assists": 1.2,
+    "threes": 0.1,
+    "minutes": 13.3
+  },
+  "Ron Holland": {
+    "team": "DET",
+    "position": "SF",
+    "games_played": 38,
+    "points": 8.4,
+    "rebounds": 4.4,
+    "assists": 1.4,
+    "threes": 0.6,
+    "minutes": 21.1
+  },
+  "Nikola Jovi\u00c4\u0087": {
+    "team": "MIA",
+    "position": "PF",
+    "games_played": 31,
+    "points": 8.4,
+    "rebounds": 3.8,
+    "assists": 2.7,
+    "threes": 1.1,
+    "minutes": 19.4
+  },
+  "Ryan Kalkbrenner": {
+    "team": "CHO",
+    "position": "C",
+    "games_played": 30,
+    "points": 8.4,
+    "rebounds": 6.3,
+    "assists": 0.7,
+    "threes": 0.0,
+    "minutes": 24.7
+  },
+  "Kentavious Caldwell-Pope": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 39,
+    "points": 8.3,
+    "rebounds": 2.4,
+    "assists": 2.9,
+    "threes": 1.2,
+    "minutes": 21.1
+  },
+  "Luke Kornet": {
+    "team": "SAS",
+    "position": "C",
+    "games_played": 34,
+    "points": 8.3,
+    "rebounds": 6.8,
+    "assists": 1.9,
+    "threes": 0.0,
+    "minutes": 24.4
+  },
+  "Bradley Beal": {
+    "team": "LAC",
+    "position": "SG",
+    "games_played": 6,
+    "points": 8.2,
+    "rebounds": 0.8,
+    "assists": 1.7,
+    "threes": 1.2,
+    "minutes": 20.2
+  },
+  "Moussa Diabat\u00c3\u00a9": {
+    "team": "CHO",
+    "position": "C",
+    "games_played": 38,
+    "points": 8.2,
+    "rebounds": 8.4,
+    "assists": 1.5,
+    "threes": 0.0,
+    "minutes": 24.4
+  },
+  "Luguentz Dort": {
+    "team": "OKC",
+    "position": "SF",
+    "games_played": 33,
+    "points": 8.2,
+    "rebounds": 3.7,
+    "assists": 1.0,
+    "threes": 1.8,
+    "minutes": 26.6
+  },
+  "Dominick Barlow": {
+    "team": "PHI",
+    "position": "PF",
+    "games_played": 30,
+    "points": 8.1,
+    "rebounds": 5.1,
+    "assists": 1.3,
+    "threes": 0.4,
+    "minutes": 24.1
+  },
+  "Caris LeVert": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 30,
+    "points": 8.1,
+    "rebounds": 1.8,
+    "assists": 2.9,
+    "threes": 1.1,
+    "minutes": 19.8
+  },
+  "Bogdan Bogdanovi\u00c4\u0087": {
+    "team": "LAC",
+    "position": "SG",
+    "games_played": 16,
+    "points": 8.0,
+    "rebounds": 2.9,
+    "assists": 2.7,
+    "threes": 1.5,
+    "minutes": 22.5
+  },
+  "Kris Dunn": {
+    "team": "LAC",
+    "position": "PG",
+    "games_played": 41,
+    "points": 8.0,
+    "rebounds": 2.9,
+    "assists": 3.1,
+    "threes": 1.1,
+    "minutes": 27.2
+  },
+  "Simone Fontecchio": {
+    "team": "MIA",
+    "position": "SF",
+    "games_played": 39,
+    "points": 8.0,
+    "rebounds": 2.8,
+    "assists": 1.4,
+    "threes": 1.7,
+    "minutes": 16.2
+  },
+  "Tre Mann": {
+    "team": "CHO",
+    "position": "PG",
+    "games_played": 27,
+    "points": 8.0,
+    "rebounds": 2.4,
+    "assists": 2.3,
+    "threes": 1.4,
+    "minutes": 17.1
+  },
+  "Day'Ron Sharpe": {
+    "team": "BRK",
+    "position": "C",
+    "games_played": 38,
+    "points": 8.0,
+    "rebounds": 6.3,
+    "assists": 2.3,
+    "threes": 0.2,
+    "minutes": 17.9
+  },
+  "Jose Alvarado": {
+    "team": "NOP",
+    "position": "PG",
+    "games_played": 35,
+    "points": 7.9,
+    "rebounds": 2.8,
+    "assists": 3.3,
+    "threes": 1.6,
+    "minutes": 22.2
+  },
+  "Kyle Anderson": {
+    "team": "UTA",
+    "position": "SF",
+    "games_played": 15,
+    "points": 7.9,
+    "rebounds": 3.7,
+    "assists": 2.9,
+    "threes": 0.1,
+    "minutes": 20.2
+  },
+  "Daniel Gafford": {
+    "team": "DAL",
+    "position": "C",
+    "games_played": 29,
+    "points": 7.8,
+    "rebounds": 6.5,
+    "assists": 0.8,
+    "threes": 0.0,
+    "minutes": 20.8
+  },
+  "Quinten Post": {
+    "team": "GSW",
+    "position": "PF",
+    "games_played": 43,
+    "points": 7.8,
+    "rebounds": 3.9,
+    "assists": 1.4,
+    "threes": 1.5,
+    "minutes": 18.0
+  },
+  "Vince Williams Jr.": {
+    "team": "MEM",
+    "position": "PG",
+    "games_played": 26,
+    "points": 7.8,
+    "rebounds": 4.2,
+    "assists": 4.8,
+    "threes": 1.3,
+    "minutes": 21.8
+  },
+  "Precious Achiuwa": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 35,
+    "points": 7.7,
+    "rebounds": 5.6,
+    "assists": 1.2,
+    "threes": 0.4,
+    "minutes": 21.0
+  },
+  "Terance Mann": {
+    "team": "BRK",
+    "position": "SG",
+    "games_played": 35,
+    "points": 7.7,
+    "rebounds": 3.4,
+    "assists": 3.6,
+    "threes": 0.8,
+    "minutes": 25.7
+  },
+  "Tyrese Martin": {
+    "team": "BRK",
+    "position": "SG",
+    "games_played": 31,
+    "points": 7.7,
+    "rebounds": 3.0,
+    "assists": 2.1,
+    "threes": 1.5,
+    "minutes": 19.6
+  },
+  "Bryce McGowens": {
+    "team": "NOP",
+    "position": "SG",
+    "games_played": 28,
+    "points": 7.7,
+    "rebounds": 2.0,
+    "assists": 1.3,
+    "threes": 0.9,
+    "minutes": 19.6
+  },
+  "Collin Murray-Boyles": {
+    "team": "TOR",
+    "position": "PF",
+    "games_played": 36,
+    "points": 7.7,
+    "rebounds": 5.1,
+    "assists": 1.9,
+    "threes": 0.4,
+    "minutes": 21.4
+  },
+  "Jamaree Bouyea": {
+    "team": "PHO",
+    "position": "PG",
+    "games_played": 19,
+    "points": 7.6,
+    "rebounds": 2.1,
+    "assists": 1.7,
+    "threes": 0.8,
+    "minutes": 14.7
+  },
+  "Quenton Jackson": {
+    "team": "IND",
+    "position": "PG",
+    "games_played": 20,
+    "points": 7.6,
+    "rebounds": 2.0,
+    "assists": 1.9,
+    "threes": 0.7,
+    "minutes": 15.8
+  },
+  "Luke Kennard": {
+    "team": "ATL",
+    "position": "SG",
+    "games_played": 38,
+    "points": 7.6,
+    "rebounds": 1.9,
+    "assists": 2.2,
+    "threes": 1.5,
+    "minutes": 20.5
+  },
+  "Jordan Miller": {
+    "team": "LAC",
+    "position": "SF",
+    "games_played": 20,
+    "points": 7.6,
+    "rebounds": 2.9,
+    "assists": 1.5,
+    "threes": 0.9,
+    "minutes": 17.4
+  },
+  "Ryan Nembhard": {
+    "team": "DAL",
+    "position": "PG",
+    "games_played": 30,
+    "points": 7.6,
+    "rebounds": 1.9,
+    "assists": 5.2,
+    "threes": 1.0,
+    "minutes": 20.6
+  },
+  "Danny Wolf": {
+    "team": "BRK",
+    "position": "PF",
+    "games_played": 25,
+    "points": 7.6,
+    "rebounds": 4.3,
+    "assists": 1.8,
+    "threes": 1.1,
+    "minutes": 19.4
+  },
+  "Luka Garza": {
+    "team": "BOS",
+    "position": "C",
+    "games_played": 33,
+    "points": 7.5,
+    "rebounds": 4.3,
+    "assists": 1.0,
+    "threes": 0.7,
+    "minutes": 16.5
+  },
+  "Moritz Wagner": {
+    "team": "ORL",
+    "position": "C",
+    "games_played": 2,
+    "points": 7.5,
+    "rebounds": 3.0,
+    "assists": 1.0,
+    "threes": 0.5,
+    "minutes": 12.0
+  },
+  "Javonte Green": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 40,
+    "points": 7.4,
+    "rebounds": 2.8,
+    "assists": 0.8,
+    "threes": 1.1,
+    "minutes": 19.8
+  },
+  "Buddy Hield": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 36,
+    "points": 7.4,
+    "rebounds": 2.4,
+    "assists": 1.4,
+    "threes": 1.4,
+    "minutes": 16.8
+  },
+  "Isaiah Jackson": {
+    "team": "IND",
+    "position": "C",
+    "games_played": 30,
+    "points": 7.4,
+    "rebounds": 5.9,
+    "assists": 0.8,
+    "threes": 0.0,
+    "minutes": 18.2
+  },
+  "Daniss Jenkins": {
+    "team": "DET",
+    "position": "PG",
+    "games_played": 33,
+    "points": 7.4,
+    "rebounds": 1.8,
+    "assists": 3.3,
+    "threes": 1.0,
+    "minutes": 15.9
+  },
+  "Cason Wallace": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 41,
+    "points": 7.4,
+    "rebounds": 3.1,
+    "assists": 2.1,
+    "threes": 1.3,
+    "minutes": 26.6
+  },
+  "Will Richard": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 38,
+    "points": 7.3,
+    "rebounds": 2.6,
+    "assists": 1.2,
+    "threes": 1.2,
+    "minutes": 19.0
+  },
+  "Walter Clayton": {
+    "team": "UTA",
+    "position": "PG",
+    "games_played": 37,
+    "points": 7.2,
+    "rebounds": 2.0,
+    "assists": 3.4,
+    "threes": 1.1,
+    "minutes": 18.1
+  },
+  "Kevin Love": {
+    "team": "UTA",
+    "position": "PF",
+    "games_played": 23,
+    "points": 7.2,
+    "rebounds": 5.4,
+    "assists": 1.9,
+    "threes": 1.5,
+    "minutes": 17.3
+  },
+  "Micah Potter": {
+    "team": "IND",
+    "position": "C",
+    "games_played": 12,
+    "points": 7.2,
+    "rebounds": 3.9,
+    "assists": 1.6,
+    "threes": 1.3,
+    "minutes": 18.3
+  },
+  "Jamal Shead": {
+    "team": "TOR",
+    "position": "PG",
+    "games_played": 43,
+    "points": 7.2,
+    "rebounds": 1.8,
+    "assists": 5.6,
+    "threes": 1.2,
+    "minutes": 22.0
+  },
+  "Justin Champagnie": {
+    "team": "WAS",
+    "position": "SF",
+    "games_played": 39,
+    "points": 7.1,
+    "rebounds": 5.7,
+    "assists": 1.1,
+    "threes": 0.6,
+    "minutes": 18.3
+  },
+  "Jaden Hardy": {
+    "team": "DAL",
+    "position": "SG",
+    "games_played": 30,
+    "points": 7.1,
+    "rebounds": 1.4,
+    "assists": 0.8,
+    "threes": 1.4,
+    "minutes": 12.6
+  },
+  "Bruce Brown": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 42,
+    "points": 7.0,
+    "rebounds": 4.2,
+    "assists": 2.2,
+    "threes": 0.5,
+    "minutes": 24.7
+  },
+  "Seth Curry": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 2,
+    "points": 7.0,
+    "rebounds": 2.0,
+    "assists": 1.5,
+    "threes": 1.0,
+    "minutes": 16.0
+  },
+  "Andre Drummond": {
+    "team": "PHI",
+    "position": "C",
+    "games_played": 34,
+    "points": 7.0,
+    "rebounds": 8.8,
+    "assists": 0.8,
+    "threes": 0.5,
+    "minutes": 20.0
+  },
+  "Tristan Vukcevic": {
+    "team": "WAS",
+    "position": "C",
+    "games_played": 30,
+    "points": 6.9,
+    "rebounds": 2.4,
+    "assists": 1.0,
+    "threes": 0.4,
+    "minutes": 11.4
+  },
+  "Trendon Watford": {
+    "team": "PHI",
+    "position": "PF",
+    "games_played": 19,
+    "points": 6.9,
+    "rebounds": 3.8,
+    "assists": 3.1,
+    "threes": 0.4,
+    "minutes": 16.9
+  },
+  "Al Horford": {
+    "team": "GSW",
+    "position": "C",
+    "games_played": 24,
+    "points": 6.8,
+    "rebounds": 4.7,
+    "assists": 2.0,
+    "threes": 1.5,
+    "minutes": 19.3
+  },
+  "Ryan Dunn": {
+    "team": "PHO",
+    "position": "SF",
+    "games_played": 35,
+    "points": 6.7,
+    "rebounds": 4.6,
+    "assists": 1.8,
+    "threes": 0.9,
+    "minutes": 21.4
+  },
+  "Bones Hyland": {
+    "team": "MIN",
+    "position": "PG",
+    "games_played": 34,
+    "points": 6.7,
+    "rebounds": 1.4,
+    "assists": 2.6,
+    "threes": 1.2,
+    "minutes": 14.0
+  },
+  "GG Jackson II": {
+    "team": "MEM",
+    "position": "PF",
+    "games_played": 20,
+    "points": 6.7,
+    "rebounds": 2.8,
+    "assists": 0.7,
+    "threes": 0.8,
+    "minutes": 15.0
+  },
+  "Gradey Dick": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 43,
+    "points": 6.6,
+    "rebounds": 2.2,
+    "assists": 0.7,
+    "threes": 0.9,
+    "minutes": 16.2
+  },
+  "Kobe Sanders": {
+    "team": "LAC",
+    "position": "SG",
+    "games_played": 33,
+    "points": 6.5,
+    "rebounds": 2.3,
+    "assists": 1.5,
+    "threes": 0.9,
+    "minutes": 20.4
+  },
+  "Ben Sheppard": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 32,
+    "points": 6.5,
+    "rebounds": 3.5,
+    "assists": 1.8,
+    "threes": 1.2,
+    "minutes": 23.1
+  },
+  "Grant Williams": {
+    "team": "CHO",
+    "position": "PF",
+    "games_played": 4,
+    "points": 6.5,
+    "rebounds": 3.3,
+    "assists": 0.5,
+    "threes": 1.3,
+    "minutes": 14.5
+  },
+  "Patrick Williams": {
+    "team": "CHI",
+    "position": "PF",
+    "games_played": 39,
+    "points": 6.5,
+    "rebounds": 2.9,
+    "assists": 1.2,
+    "threes": 1.3,
+    "minutes": 18.4
+  },
+  "Cole Anthony": {
+    "team": "MIL",
+    "position": "PG",
+    "games_played": 29,
+    "points": 6.4,
+    "rebounds": 2.6,
+    "assists": 3.6,
+    "threes": 0.6,
+    "minutes": 14.7
+  },
+  "Sion James": {
+    "team": "CHO",
+    "position": "SG",
+    "games_played": 42,
+    "points": 6.4,
+    "rebounds": 3.5,
+    "assists": 2.0,
+    "threes": 1.1,
+    "minutes": 25.3
+  },
+  "Brook Lopez": {
+    "team": "LAC",
+    "position": "C",
+    "games_played": 34,
+    "points": 6.4,
+    "rebounds": 2.6,
+    "assists": 0.9,
+    "threes": 1.5,
+    "minutes": 17.0
+  },
+  "Jaxson Hayes": {
+    "team": "LAL",
+    "position": "C",
+    "games_played": 32,
+    "points": 6.3,
+    "rebounds": 4.0,
+    "assists": 0.9,
+    "threes": 0.0,
+    "minutes": 17.6
+  },
+  "Jared McCain": {
+    "team": "PHI",
+    "position": "SG",
+    "games_played": 30,
+    "points": 6.3,
+    "rebounds": 2.2,
+    "assists": 1.6,
+    "threes": 1.0,
+    "minutes": 17.3
+  },
+  "Mac McClung": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 3,
+    "points": 6.3,
+    "rebounds": 1.3,
+    "assists": 0.3,
+    "threes": 0.7,
+    "minutes": 11.3
+  },
+  "Josh Minott": {
+    "team": "BOS",
+    "position": "PF",
+    "games_played": 29,
+    "points": 6.3,
+    "rebounds": 4.0,
+    "assists": 1.1,
+    "threes": 1.1,
+    "minutes": 17.6
+  },
+  "Alex Caruso": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 31,
+    "points": 6.2,
+    "rebounds": 2.9,
+    "assists": 2.1,
+    "threes": 1.0,
+    "minutes": 18.5
+  },
+  "Sidy Cissoko": {
+    "team": "POR",
+    "position": "SF",
+    "games_played": 38,
+    "points": 6.2,
+    "rebounds": 2.3,
+    "assists": 1.5,
+    "threes": 1.1,
+    "minutes": 21.1
+  },
+  "Drake Powell": {
+    "team": "BRK",
+    "position": "SG",
+    "games_played": 29,
+    "points": 6.2,
+    "rebounds": 1.6,
+    "assists": 1.7,
+    "threes": 0.7,
+    "minutes": 18.8
+  },
+  "Nick Smith Jr.": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 22,
+    "points": 6.2,
+    "rebounds": 0.8,
+    "assists": 1.2,
+    "threes": 1.2,
+    "minutes": 13.5
+  },
+  "Nae'Qwan Tomlin": {
+    "team": "CLE",
+    "position": "PF",
+    "games_played": 32,
+    "points": 6.2,
+    "rebounds": 2.9,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 15.6
+  },
+  "Goga Bitadze": {
+    "team": "ORL",
+    "position": "C",
+    "games_played": 37,
+    "points": 6.1,
+    "rebounds": 5.3,
+    "assists": 1.3,
+    "threes": 0.1,
+    "minutes": 16.9
+  },
+  "Spencer Jones": {
+    "team": "DEN",
+    "position": "SF",
+    "games_played": 37,
+    "points": 6.1,
+    "rebounds": 2.9,
+    "assists": 0.9,
+    "threes": 1.0,
+    "minutes": 22.4
+  },
+  "Kris Murray": {
+    "team": "POR",
+    "position": "SF",
+    "games_played": 34,
+    "points": 6.1,
+    "rebounds": 4.0,
+    "assists": 1.2,
+    "threes": 0.6,
+    "minutes": 25.7
+  },
+  "Taurean Prince": {
+    "team": "MIL",
+    "position": "SF",
+    "games_played": 8,
+    "points": 6.1,
+    "rebounds": 1.6,
+    "assists": 1.0,
+    "threes": 1.5,
+    "minutes": 21.1
+  },
+  "Dru Smith": {
+    "team": "MIA",
+    "position": "SG",
+    "games_played": 42,
+    "points": 6.1,
+    "rebounds": 2.3,
+    "assists": 2.6,
+    "threes": 0.7,
+    "minutes": 16.8
+  },
+  "Jordan Walsh": {
+    "team": "BOS",
+    "position": "PF",
+    "games_played": 36,
+    "points": 6.1,
+    "rebounds": 4.7,
+    "assists": 0.9,
+    "threes": 0.8,
+    "minutes": 19.3
+  },
+  "Ja'Kobe Walter": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 37,
+    "points": 6.1,
+    "rebounds": 2.1,
+    "assists": 0.9,
+    "threes": 1.2,
+    "minutes": 17.7
+  },
+  "Aaron Holiday": {
+    "team": "HOU",
+    "position": "PG",
+    "games_played": 30,
+    "points": 6.0,
+    "rebounds": 0.8,
+    "assists": 1.0,
+    "threes": 1.3,
+    "minutes": 14.0
+  },
+  "Jalen Pickett": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 27,
+    "points": 6.0,
+    "rebounds": 2.6,
+    "assists": 2.5,
+    "threes": 1.2,
+    "minutes": 17.0
+  },
+  "Tidjane Sala\u00c3\u00bcn": {
+    "team": "CHO",
+    "position": "PF",
+    "games_played": 27,
+    "points": 6.0,
+    "rebounds": 4.1,
+    "assists": 0.9,
+    "threes": 1.0,
+    "minutes": 16.1
+  },
+  "KJ Simpson": {
+    "team": "CHO",
+    "position": "PG",
+    "games_played": 14,
+    "points": 6.0,
+    "rebounds": 2.1,
+    "assists": 2.5,
+    "threes": 0.9,
+    "minutes": 15.9
+  },
+  "Blake Wesley": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 6,
+    "points": 6.0,
+    "rebounds": 2.3,
+    "assists": 3.2,
+    "threes": 0.3,
+    "minutes": 16.3
+  },
+  "Robert Williams": {
+    "team": "POR",
+    "position": "C",
+    "games_played": 30,
+    "points": 6.0,
+    "rebounds": 6.2,
+    "assists": 1.0,
+    "threes": 0.1,
+    "minutes": 15.9
+  },
+  "Steven Adams": {
+    "team": "HOU",
+    "position": "C",
+    "games_played": 31,
+    "points": 5.9,
+    "rebounds": 8.6,
+    "assists": 1.5,
+    "threes": 0.0,
+    "minutes": 22.7
+  },
+  "Jase Richardson": {
+    "team": "ORL",
+    "position": "SG",
+    "games_played": 28,
+    "points": 5.9,
+    "rebounds": 1.4,
+    "assists": 1.3,
+    "threes": 0.8,
+    "minutes": 11.8
+  },
+  "Paul Reed": {
+    "team": "DET",
+    "position": "C",
+    "games_played": 31,
+    "points": 5.8,
+    "rebounds": 4.3,
+    "assists": 1.2,
+    "threes": 0.2,
+    "minutes": 12.2
+  },
+  "Dean Wade": {
+    "team": "CLE",
+    "position": "PF",
+    "games_played": 34,
+    "points": 5.8,
+    "rebounds": 4.0,
+    "assists": 1.6,
+    "threes": 1.2,
+    "minutes": 22.6
+  },
+  "Jevon Carter": {
+    "team": "CHI",
+    "position": "PG",
+    "games_played": 19,
+    "points": 5.7,
+    "rebounds": 1.1,
+    "assists": 0.9,
+    "threes": 1.5,
+    "minutes": 11.9
+  },
+  "Jaylin Williams": {
+    "team": "OKC",
+    "position": "PF",
+    "games_played": 29,
+    "points": 5.7,
+    "rebounds": 4.7,
+    "assists": 2.4,
+    "threes": 1.1,
+    "minutes": 18.2
+  },
+  "Eric Gordon": {
+    "team": "PHI",
+    "position": "SG",
+    "games_played": 6,
+    "points": 5.5,
+    "rebounds": 0.3,
+    "assists": 0.5,
+    "threes": 1.3,
+    "minutes": 12.3
+  },
+  "Josh Okogie": {
+    "team": "HOU",
+    "position": "SG",
+    "games_played": 39,
+    "points": 5.5,
+    "rebounds": 2.8,
+    "assists": 0.9,
+    "threes": 0.9,
+    "minutes": 19.6
+  },
+  "Marcus Sasser": {
+    "team": "DET",
+    "position": "PG",
+    "games_played": 11,
+    "points": 5.5,
+    "rebounds": 1.1,
+    "assists": 1.7,
+    "threes": 1.2,
+    "minutes": 9.1
+  },
+  "Pat Spencer": {
+    "team": "GSW",
+    "position": "PG",
+    "games_played": 28,
+    "points": 5.5,
+    "rebounds": 2.0,
+    "assists": 2.9,
+    "threes": 0.6,
+    "minutes": 13.9
+  },
+  "Nique Clifford": {
+    "team": "SAC",
+    "position": "SG",
+    "games_played": 38,
+    "points": 5.4,
+    "rebounds": 2.9,
+    "assists": 1.3,
+    "threes": 0.7,
+    "minutes": 18.6
+  },
+  "Yves Missi": {
+    "team": "NOP",
+    "position": "C",
+    "games_played": 36,
+    "points": 5.4,
+    "rebounds": 5.4,
+    "assists": 1.1,
+    "threes": 0.0,
+    "minutes": 18.2
+  },
+  "Ben Saraf": {
+    "team": "BRK",
+    "position": "SG",
+    "games_played": 12,
+    "points": 5.4,
+    "rebounds": 1.6,
+    "assists": 2.8,
+    "threes": 0.8,
+    "minutes": 16.9
+  },
+  "Keon Ellis": {
+    "team": "SAC",
+    "position": "SG",
+    "games_played": 39,
+    "points": 5.3,
+    "rebounds": 1.3,
+    "assists": 0.6,
+    "threes": 1.2,
+    "minutes": 17.3
+  },
+  "Johnny Furphy": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 25,
+    "points": 5.3,
+    "rebounds": 3.9,
+    "assists": 0.7,
+    "threes": 0.7,
+    "minutes": 17.2
+  },
+  "Oso Ighodaro": {
+    "team": "PHO",
+    "position": "PF",
+    "games_played": 42,
+    "points": 5.3,
+    "rebounds": 4.3,
+    "assists": 1.7,
+    "threes": 0.0,
+    "minutes": 19.7
+  },
+  "Kenrich Williams": {
+    "team": "OKC",
+    "position": "PF",
+    "games_played": 23,
+    "points": 5.3,
+    "rebounds": 2.7,
+    "assists": 1.4,
+    "threes": 0.8,
+    "minutes": 13.3
+  },
+  "Drew Eubanks": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 30,
+    "points": 5.2,
+    "rebounds": 2.7,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 14.0
+  },
+  "Taylor Hendricks": {
+    "team": "UTA",
+    "position": "PF",
+    "games_played": 30,
+    "points": 5.2,
+    "rebounds": 3.2,
+    "assists": 0.7,
+    "threes": 0.8,
+    "minutes": 15.3
+  },
+  "Garrison Mathews": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 15,
+    "points": 5.2,
+    "rebounds": 1.1,
+    "assists": 0.7,
+    "threes": 1.1,
+    "minutes": 13.1
+  },
+  "Will Riley": {
+    "team": "WAS",
+    "position": "SF",
+    "games_played": 33,
+    "points": 5.2,
+    "rebounds": 2.0,
+    "assists": 1.2,
+    "threes": 0.4,
+    "minutes": 13.6
+  },
+  "Tolu Smith": {
+    "team": "DET",
+    "position": "PF",
+    "games_played": 5,
+    "points": 5.2,
+    "rebounds": 5.6,
+    "assists": 0.8,
+    "threes": 0.0,
+    "minutes": 11.0
+  },
+  "Cody Williams": {
+    "team": "UTA",
+    "position": "SG",
+    "games_played": 29,
+    "points": 5.2,
+    "rebounds": 2.0,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 16.6
+  },
+  "Jeremiah Robinson-Earl": {
+    "team": "2TM",
+    "position": "PF",
+    "games_played": 19,
+    "points": 5.1,
+    "rebounds": 5.2,
+    "assists": 0.7,
+    "threes": 0.5,
+    "minutes": 17.9
+  },
+  "Asa Newell": {
+    "team": "ATL",
+    "position": "PF",
+    "games_played": 32,
+    "points": 5.1,
+    "rebounds": 2.0,
+    "assists": 0.6,
+    "threes": 0.8,
+    "minutes": 10.6
+  },
+  "Jarred Vanderbilt": {
+    "team": "LAL",
+    "position": "PF",
+    "games_played": 31,
+    "points": 5.1,
+    "rebounds": 5.1,
+    "assists": 1.3,
+    "threes": 0.5,
+    "minutes": 19.8
+  },
+  "Lonzo Ball": {
+    "team": "CLE",
+    "position": "PG",
+    "games_played": 29,
+    "points": 5.0,
+    "rebounds": 4.0,
+    "assists": 4.2,
+    "threes": 1.2,
+    "minutes": 21.8
+  },
+  "Branden Carlson": {
+    "team": "OKC",
+    "position": "C",
+    "games_played": 30,
+    "points": 5.0,
+    "rebounds": 2.5,
+    "assists": 0.6,
+    "threes": 0.6,
+    "minutes": 10.9
+  },
+  "Justin Edwards": {
+    "team": "PHI",
+    "position": "SF",
+    "games_played": 31,
+    "points": 5.0,
+    "rebounds": 1.6,
+    "assists": 1.2,
+    "threes": 1.0,
+    "minutes": 14.9
+  },
+  "Karlo Matkovi\u00c4\u0087": {
+    "team": "NOP",
+    "position": "PF",
+    "games_played": 31,
+    "points": 5.0,
+    "rebounds": 3.2,
+    "assists": 0.7,
+    "threes": 0.4,
+    "minutes": 12.5
+  },
+  "Noah Penda": {
+    "team": "ORL",
+    "position": "SF",
+    "games_played": 26,
+    "points": 5.0,
+    "rebounds": 4.2,
+    "assists": 1.2,
+    "threes": 0.7,
+    "minutes": 14.1
+  },
+  "Matisse Thybulle": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 4,
+    "points": 5.0,
+    "rebounds": 1.0,
+    "assists": 0.8,
+    "threes": 1.0,
+    "minutes": 12.3
+  },
+  "Gabe Vincent": {
+    "team": "LAL",
+    "position": "PG",
+    "games_played": 20,
+    "points": 5.0,
+    "rebounds": 0.9,
+    "assists": 1.4,
+    "threes": 1.4,
+    "minutes": 20.3
+  },
+  "Jalen Wilson": {
+    "team": "BRK",
+    "position": "PF",
+    "games_played": 26,
+    "points": 5.0,
+    "rebounds": 1.1,
+    "assists": 0.5,
+    "threes": 1.0,
+    "minutes": 13.6
+  },
+  "Nicolas Batum": {
+    "team": "LAC",
+    "position": "PF",
+    "games_played": 40,
+    "points": 4.9,
+    "rebounds": 2.6,
+    "assists": 0.8,
+    "threes": 1.5,
+    "minutes": 20.4
+  },
+  "Mike Conley": {
+    "team": "MIN",
+    "position": "PG",
+    "games_played": 37,
+    "points": 4.9,
+    "rebounds": 1.7,
+    "assists": 3.0,
+    "threes": 1.1,
+    "minutes": 18.7
+  },
+  "Dalton Knecht": {
+    "team": "LAL",
+    "position": "SF",
+    "games_played": 35,
+    "points": 4.9,
+    "rebounds": 1.6,
+    "assists": 0.4,
+    "threes": 0.8,
+    "minutes": 12.8
+  },
+  "Tyler Kolek": {
+    "team": "NYK",
+    "position": "PG",
+    "games_played": 37,
+    "points": 4.9,
+    "rebounds": 2.0,
+    "assists": 2.9,
+    "threes": 0.6,
+    "minutes": 13.7
+  },
+  "Gary Payton II": {
+    "team": "GSW",
+    "position": "SG",
+    "games_played": 40,
+    "points": 4.9,
+    "rebounds": 3.3,
+    "assists": 1.7,
+    "threes": 0.3,
+    "minutes": 12.6
+  },
+  "Tyrese Proctor": {
+    "team": "CLE",
+    "position": "PG",
+    "games_played": 29,
+    "points": 4.9,
+    "rebounds": 1.3,
+    "assists": 1.3,
+    "threes": 0.9,
+    "minutes": 10.6
+  },
+  "A.J. Lawson": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 8,
+    "points": 4.8,
+    "rebounds": 2.4,
+    "assists": 0.4,
+    "threes": 0.9,
+    "minutes": 10.8
+  },
+  "Olivier-Maxence Prosper": {
+    "team": "MEM",
+    "position": "PF",
+    "games_played": 20,
+    "points": 4.8,
+    "rebounds": 2.3,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 11.3
+  },
+  "Thomas Bryant": {
+    "team": "CLE",
+    "position": "C",
+    "games_played": 30,
+    "points": 4.7,
+    "rebounds": 2.6,
+    "assists": 0.4,
+    "threes": 0.5,
+    "minutes": 9.3
+  },
+  "Mouhamed Gueye": {
+    "team": "ATL",
+    "position": "PF",
+    "games_played": 42,
+    "points": 4.7,
+    "rebounds": 3.6,
+    "assists": 1.0,
+    "threes": 0.5,
+    "minutes": 16.2
+  },
+  "Craig Porter Jr.": {
+    "team": "CLE",
+    "position": "PG",
+    "games_played": 38,
+    "points": 4.7,
+    "rebounds": 3.6,
+    "assists": 3.1,
+    "threes": 0.5,
+    "minutes": 17.6
+  },
+  "PJ Hall": {
+    "team": "2TM",
+    "position": "C",
+    "games_played": 15,
+    "points": 4.6,
+    "rebounds": 3.5,
+    "assists": 0.5,
+    "threes": 0.2,
+    "minutes": 10.3
+  },
+  "Ochai Agbaji": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 34,
+    "points": 4.6,
+    "rebounds": 2.4,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 16.2
+  },
+  "Jett Howard": {
+    "team": "ORL",
+    "position": "SF",
+    "games_played": 27,
+    "points": 4.6,
+    "rebounds": 1.4,
+    "assists": 0.9,
+    "threes": 0.9,
+    "minutes": 10.7
+  },
+  "Micah Peavy": {
+    "team": "NOP",
+    "position": "SG",
+    "games_played": 36,
+    "points": 4.6,
+    "rebounds": 2.1,
+    "assists": 1.1,
+    "threes": 0.4,
+    "minutes": 15.6
+  },
+  "Nolan Traor\u00c3\u00a9": {
+    "team": "BRK",
+    "position": "PG",
+    "games_played": 19,
+    "points": 4.6,
+    "rebounds": 1.2,
+    "assists": 2.7,
+    "threes": 0.7,
+    "minutes": 17.1
+  },
+  "DeAndre Jordan": {
+    "team": "NOP",
+    "position": "C",
+    "games_played": 2,
+    "points": 4.5,
+    "rebounds": 5.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 11.5
+  },
+  "Mitchell Robinson": {
+    "team": "NYK",
+    "position": "C",
+    "games_played": 29,
+    "points": 4.5,
+    "rebounds": 9.0,
+    "assists": 1.1,
+    "threes": 0.0,
+    "minutes": 19.4
+  },
+  "Terrence Shannon Jr.": {
+    "team": "MIN",
+    "position": "SG",
+    "games_played": 22,
+    "points": 4.5,
+    "rebounds": 1.3,
+    "assists": 0.6,
+    "threes": 0.7,
+    "minutes": 12.8
+  },
+  "Dylan Cardwell": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 15,
+    "points": 4.4,
+    "rebounds": 6.3,
+    "assists": 0.9,
+    "threes": 0.0,
+    "minutes": 17.9
+  },
+  "DaRon Holmes": {
+    "team": "DEN",
+    "position": "PF",
+    "games_played": 10,
+    "points": 4.4,
+    "rebounds": 1.7,
+    "assists": 1.3,
+    "threes": 1.1,
+    "minutes": 12.8
+  },
+  "Trayce Jackson-Davis": {
+    "team": "GSW",
+    "position": "C",
+    "games_played": 30,
+    "points": 4.4,
+    "rebounds": 3.5,
+    "assists": 0.9,
+    "threes": 0.0,
+    "minutes": 12.0
+  },
+  "Jeremy Sochan": {
+    "team": "SAS",
+    "position": "PF",
+    "games_played": 26,
+    "points": 4.4,
+    "rebounds": 2.8,
+    "assists": 1.1,
+    "threes": 0.3,
+    "minutes": 13.5
+  },
+  "Ethan Thompson": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 19,
+    "points": 4.4,
+    "rebounds": 1.8,
+    "assists": 1.4,
+    "threes": 0.8,
+    "minutes": 16.1
+  },
+  "RayJ Dennis": {
+    "team": "3TM",
+    "position": "PG",
+    "games_played": 15,
+    "points": 4.3,
+    "rebounds": 1.5,
+    "assists": 2.0,
+    "threes": 0.8,
+    "minutes": 11.8
+  },
+  "Josh Green": {
+    "team": "CHO",
+    "position": "SG",
+    "games_played": 18,
+    "points": 4.3,
+    "rebounds": 1.8,
+    "assists": 1.1,
+    "threes": 1.1,
+    "minutes": 15.8
+  },
+  "Dereck Lively II": {
+    "team": "DAL",
+    "position": "C",
+    "games_played": 7,
+    "points": 4.3,
+    "rebounds": 5.3,
+    "assists": 1.9,
+    "threes": 0.0,
+    "minutes": 16.4
+  },
+  "Liam McNeeley": {
+    "team": "CHO",
+    "position": "SF",
+    "games_played": 27,
+    "points": 4.3,
+    "rebounds": 2.2,
+    "assists": 0.9,
+    "threes": 0.8,
+    "minutes": 12.4
+  },
+  "Zeke Nnaji": {
+    "team": "DEN",
+    "position": "PF",
+    "games_played": 29,
+    "points": 4.3,
+    "rebounds": 2.5,
+    "assists": 0.6,
+    "threes": 0.3,
+    "minutes": 12.6
+  },
+  "Javon Small": {
+    "team": "MEM",
+    "position": "PG",
+    "games_played": 14,
+    "points": 4.3,
+    "rebounds": 1.4,
+    "assists": 3.3,
+    "threes": 0.7,
+    "minutes": 12.6
+  },
+  "Jaylen Clark": {
+    "team": "MIN",
+    "position": "SG",
+    "games_played": 40,
+    "points": 4.2,
+    "rebounds": 2.0,
+    "assists": 0.6,
+    "threes": 0.4,
+    "minutes": 14.0
+  },
+  "Jordan Hawkins": {
+    "team": "NOP",
+    "position": "SG",
+    "games_played": 34,
+    "points": 4.2,
+    "rebounds": 1.7,
+    "assists": 0.7,
+    "threes": 0.8,
+    "minutes": 14.1
+  },
+  "Kasparas Jaku\u00c4\u008dionis": {
+    "team": "MIA",
+    "position": "PG",
+    "games_played": 16,
+    "points": 4.2,
+    "rebounds": 2.1,
+    "assists": 1.9,
+    "threes": 1.0,
+    "minutes": 14.6
+  },
+  "Keaton Wallace": {
+    "team": "ATL",
+    "position": "PG",
+    "games_played": 36,
+    "points": 4.2,
+    "rebounds": 1.3,
+    "assists": 2.2,
+    "threes": 0.9,
+    "minutes": 12.2
+  },
+  "Malaki Branham": {
+    "team": "WAS",
+    "position": "SG",
+    "games_played": 24,
+    "points": 4.1,
+    "rebounds": 1.6,
+    "assists": 0.9,
+    "threes": 0.3,
+    "minutes": 9.6
+  },
+  "Ousmane Dieng": {
+    "team": "OKC",
+    "position": "C",
+    "games_played": 19,
+    "points": 4.1,
+    "rebounds": 1.7,
+    "assists": 0.9,
+    "threes": 0.8,
+    "minutes": 11.7
+  },
+  "Miles Kelly": {
+    "team": "DAL",
+    "position": "PG",
+    "games_played": 7,
+    "points": 4.1,
+    "rebounds": 1.6,
+    "assists": 0.6,
+    "threes": 1.0,
+    "minutes": 10.6
+  },
+  "Adem Bona": {
+    "team": "PHI",
+    "position": "C",
+    "games_played": 31,
+    "points": 4.0,
+    "rebounds": 3.8,
+    "assists": 0.3,
+    "threes": 0.1,
+    "minutes": 16.9
+  },
+  "Tony Bradley": {
+    "team": "IND",
+    "position": "C",
+    "games_played": 35,
+    "points": 4.0,
+    "rebounds": 2.8,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 11.2
+  },
+  "Kobe Bufkin": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 3,
+    "points": 4.0,
+    "rebounds": 1.7,
+    "assists": 0.7,
+    "threes": 0.7,
+    "minutes": 14.3
+  },
+  "Brandon Clarke": {
+    "team": "MEM",
+    "position": "PF",
+    "games_played": 2,
+    "points": 4.0,
+    "rebounds": 3.0,
+    "assists": 0.5,
+    "threes": 0.0,
+    "minutes": 10.0
+  },
+  "Hugo Gonz\u00c3\u00a1lez": {
+    "team": "BOS",
+    "position": "SF",
+    "games_played": 36,
+    "points": 4.0,
+    "rebounds": 3.4,
+    "assists": 0.6,
+    "threes": 0.5,
+    "minutes": 15.3
+  },
+  "Jabari Walker": {
+    "team": "PHI",
+    "position": "PF",
+    "games_played": 38,
+    "points": 4.0,
+    "rebounds": 3.3,
+    "assists": 0.5,
+    "threes": 0.3,
+    "minutes": 12.6
+  },
+  "Kelly Olynyk": {
+    "team": "SAS",
+    "position": "C",
+    "games_played": 26,
+    "points": 3.7,
+    "rebounds": 2.0,
+    "assists": 1.3,
+    "threes": 0.3,
+    "minutes": 9.7
+  },
+  "Gui Santos": {
+    "team": "GSW",
+    "position": "PF",
+    "games_played": 33,
+    "points": 3.7,
+    "rebounds": 2.4,
+    "assists": 1.0,
+    "threes": 0.6,
+    "minutes": 11.3
+  },
+  "Clint Capela": {
+    "team": "HOU",
+    "position": "C",
+    "games_played": 34,
+    "points": 3.6,
+    "rebounds": 4.4,
+    "assists": 0.5,
+    "threes": 0.0,
+    "minutes": 11.4
+  },
+  "Rob Dillingham": {
+    "team": "MIN",
+    "position": "PG",
+    "games_played": 32,
+    "points": 3.6,
+    "rebounds": 1.2,
+    "assists": 1.8,
+    "threes": 0.3,
+    "minutes": 9.8
+  },
+  "Yanic Konan Niederh\u00c3\u00a4user": {
+    "team": "LAC",
+    "position": "C",
+    "games_played": 23,
+    "points": 3.6,
+    "rebounds": 2.1,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 8.7
+  },
+  "Drew Timme": {
+    "team": "LAL",
+    "position": "PF",
+    "games_played": 7,
+    "points": 3.6,
+    "rebounds": 0.9,
+    "assists": 1.0,
+    "threes": 0.4,
+    "minutes": 6.6
+  },
+  "Charles Bassey": {
+    "team": "MEM",
+    "position": "C",
+    "games_played": 2,
+    "points": 3.5,
+    "rebounds": 7.5,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 15.5
+  },
+  "Cam Christie": {
+    "team": "LAC",
+    "position": "SG",
+    "games_played": 27,
+    "points": 3.5,
+    "rebounds": 1.7,
+    "assists": 0.6,
+    "threes": 0.4,
+    "minutes": 9.4
+  },
+  "Moussa Cisse": {
+    "team": "DAL",
+    "position": "C",
+    "games_played": 24,
+    "points": 3.5,
+    "rebounds": 4.5,
+    "assists": 0.2,
+    "threes": 0.0,
+    "minutes": 11.5
+  },
+  "Alijah Martin": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 8,
+    "points": 3.5,
+    "rebounds": 1.5,
+    "assists": 0.9,
+    "threes": 0.3,
+    "minutes": 10.5
+  },
+  "Larry Nance Jr.": {
+    "team": "CLE",
+    "position": "PF",
+    "games_played": 17,
+    "points": 3.5,
+    "rebounds": 2.7,
+    "assists": 1.2,
+    "threes": 0.6,
+    "minutes": 14.4
+  },
+  "Antonio Reeves": {
+    "team": "CHO",
+    "position": "SG",
+    "games_played": 6,
+    "points": 3.5,
+    "rebounds": 0.8,
+    "assists": 0.3,
+    "threes": 0.8,
+    "minutes": 8.8
+  },
+  "Jamison Battle": {
+    "team": "TOR",
+    "position": "SF",
+    "games_played": 30,
+    "points": 3.4,
+    "rebounds": 1.5,
+    "assists": 0.4,
+    "threes": 0.6,
+    "minutes": 8.6
+  },
+  "Doug McDermott": {
+    "team": "SAC",
+    "position": "SF",
+    "games_played": 7,
+    "points": 3.4,
+    "rebounds": 0.7,
+    "assists": 0.3,
+    "threes": 1.1,
+    "minutes": 10.0
+  },
+  "Chaz Lanier": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 16,
+    "points": 3.3,
+    "rebounds": 0.9,
+    "assists": 0.8,
+    "threes": 0.9,
+    "minutes": 9.6
+  },
+  "James Wiseman": {
+    "team": "IND",
+    "position": "C",
+    "games_played": 4,
+    "points": 3.3,
+    "rebounds": 2.0,
+    "assists": 0.8,
+    "threes": 0.0,
+    "minutes": 14.5
+  },
+  "Devin Carter": {
+    "team": "SAC",
+    "position": "PG",
+    "games_played": 12,
+    "points": 3.2,
+    "rebounds": 1.2,
+    "assists": 1.1,
+    "threes": 0.4,
+    "minutes": 8.4
+  },
+  "Pat Connaughton": {
+    "team": "CHO",
+    "position": "SG",
+    "games_played": 19,
+    "points": 3.2,
+    "rebounds": 1.4,
+    "assists": 0.5,
+    "threes": 0.5,
+    "minutes": 7.2
+  },
+  "Tyus Jones": {
+    "team": "ORL",
+    "position": "PG",
+    "games_played": 41,
+    "points": 3.2,
+    "rebounds": 1.1,
+    "assists": 2.4,
+    "threes": 0.6,
+    "minutes": 16.4
+  },
+  "Nick Richards": {
+    "team": "PHO",
+    "position": "C",
+    "games_played": 28,
+    "points": 3.2,
+    "rebounds": 3.3,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 9.1
+  },
+  "Julian Strawther": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 21,
+    "points": 3.2,
+    "rebounds": 1.2,
+    "assists": 0.7,
+    "threes": 0.2,
+    "minutes": 9.2
+  },
+  "Joan Beringer": {
+    "team": "MIN",
+    "position": "PF",
+    "games_played": 17,
+    "points": 3.1,
+    "rebounds": 2.1,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 7.1
+  },
+  "Keshad Johnson": {
+    "team": "MIA",
+    "position": "SF",
+    "games_played": 17,
+    "points": 3.1,
+    "rebounds": 2.0,
+    "assists": 0.1,
+    "threes": 0.3,
+    "minutes": 8.1
+  },
+  "Dwight Powell": {
+    "team": "DAL",
+    "position": "C",
+    "games_played": 29,
+    "points": 3.1,
+    "rebounds": 3.4,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 13.8
+  },
+  "Mark Sears": {
+    "team": "MIL",
+    "position": "PG",
+    "games_played": 7,
+    "points": 3.1,
+    "rebounds": 0.3,
+    "assists": 0.3,
+    "threes": 0.6,
+    "minutes": 3.7
+  },
+  "Jamir Watkins": {
+    "team": "WAS",
+    "position": "SG",
+    "games_played": 16,
+    "points": 3.1,
+    "rebounds": 2.6,
+    "assists": 0.4,
+    "threes": 0.4,
+    "minutes": 13.1
+  },
+  "Jonathan Isaac": {
+    "team": "ORL",
+    "position": "PF",
+    "games_played": 34,
+    "points": 3.0,
+    "rebounds": 2.8,
+    "assists": 0.3,
+    "threes": 0.2,
+    "minutes": 10.4
+  },
+  "John Konchar": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 24,
+    "points": 3.0,
+    "rebounds": 2.8,
+    "assists": 1.3,
+    "threes": 0.4,
+    "minutes": 12.9
+  },
+  "Chris Livingston": {
+    "team": "CLE",
+    "position": "SF",
+    "games_played": 3,
+    "points": 3.0,
+    "rebounds": 1.0,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 5.7
+  },
+  "Emanuel Miller": {
+    "team": "CHI",
+    "position": "PF",
+    "games_played": 5,
+    "points": 3.0,
+    "rebounds": 0.6,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 6.6
+  },
+  "Riley Minix": {
+    "team": "SAS",
+    "position": "SF",
+    "games_played": 3,
+    "points": 3.0,
+    "rebounds": 0.7,
+    "assists": 0.3,
+    "threes": 0.3,
+    "minutes": 2.7
+  },
+  "Monte Morris": {
+    "team": "IND",
+    "position": "PG",
+    "games_played": 6,
+    "points": 3.0,
+    "rebounds": 1.2,
+    "assists": 1.5,
+    "threes": 0.3,
+    "minutes": 10.8
+  },
+  "Julian Phillips": {
+    "team": "CHI",
+    "position": "SF",
+    "games_played": 28,
+    "points": 3.0,
+    "rebounds": 1.4,
+    "assists": 0.3,
+    "threes": 0.5,
+    "minutes": 10.2
+  },
+  "Duop Reath": {
+    "team": "POR",
+    "position": "C",
+    "games_played": 31,
+    "points": 3.0,
+    "rebounds": 1.2,
+    "assists": 0.3,
+    "threes": 0.7,
+    "minutes": 7.9
+  },
+  "Jericho Sims": {
+    "team": "MIL",
+    "position": "C",
+    "games_played": 30,
+    "points": 3.0,
+    "rebounds": 3.8,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 14.4
+  },
+  "TyTy Washington Jr.": {
+    "team": "LAC",
+    "position": "PG",
+    "games_played": 1,
+    "points": 3.0,
+    "rebounds": 1.0,
+    "assists": 2.0,
+    "threes": 1.0,
+    "minutes": 10.0
+  },
+  "Guerschon Yabusele": {
+    "team": "NYK",
+    "position": "C",
+    "games_played": 35,
+    "points": 3.0,
+    "rebounds": 2.2,
+    "assists": 0.5,
+    "threes": 0.6,
+    "minutes": 9.5
+  },
+  "Kobe Brown": {
+    "team": "LAC",
+    "position": "PF",
+    "games_played": 27,
+    "points": 2.9,
+    "rebounds": 1.6,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 9.3
+  },
+  "Jamal Cain": {
+    "team": "ORL",
+    "position": "SF",
+    "games_played": 16,
+    "points": 2.9,
+    "rebounds": 0.8,
+    "assists": 0.3,
+    "threes": 0.3,
+    "minutes": 7.4
+  },
+  "David Jones Garc\u00c3\u00ada": {
+    "team": "SAS",
+    "position": "SF",
+    "games_played": 11,
+    "points": 2.9,
+    "rebounds": 1.2,
+    "assists": 1.6,
+    "threes": 0.3,
+    "minutes": 6.2
+  },
+  "Chris Paul": {
+    "team": "LAC",
+    "position": "PG",
+    "games_played": 16,
+    "points": 2.9,
+    "rebounds": 1.8,
+    "assists": 3.3,
+    "threes": 0.6,
+    "minutes": 14.3
+  },
+  "Baylor Scheierman": {
+    "team": "BOS",
+    "position": "SG",
+    "games_played": 36,
+    "points": 2.9,
+    "rebounds": 1.8,
+    "assists": 0.7,
+    "threes": 0.7,
+    "minutes": 12.2
+  },
+  "Dalen Terry": {
+    "team": "CHI",
+    "position": "SG",
+    "games_played": 26,
+    "points": 2.9,
+    "rebounds": 1.7,
+    "assists": 1.0,
+    "threes": 0.4,
+    "minutes": 10.2
+  },
+  "Trey Alexander": {
+    "team": "NOP",
+    "position": "SG",
+    "games_played": 5,
+    "points": 2.8,
+    "rebounds": 0.8,
+    "assists": 1.0,
+    "threes": 0.4,
+    "minutes": 8.4
+  },
+  "Myron Gardner": {
+    "team": "MIA",
+    "position": "SF",
+    "games_played": 14,
+    "points": 2.8,
+    "rebounds": 1.7,
+    "assists": 0.4,
+    "threes": 0.5,
+    "minutes": 5.9
+  },
+  "Bobi Klintman": {
+    "team": "DET",
+    "position": "SF",
+    "games_played": 6,
+    "points": 2.8,
+    "rebounds": 2.7,
+    "assists": 0.7,
+    "threes": 0.5,
+    "minutes": 8.8
+  },
+  "Gary Harris": {
+    "team": "MIL",
+    "position": "SG",
+    "games_played": 31,
+    "points": 2.7,
+    "rebounds": 1.5,
+    "assists": 1.0,
+    "threes": 0.6,
+    "minutes": 14.6
+  },
+  "Rayan Rupert": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 36,
+    "points": 2.7,
+    "rebounds": 1.7,
+    "assists": 0.7,
+    "threes": 0.4,
+    "minutes": 11.5
+  },
+  "Jae'Sean Tate": {
+    "team": "HOU",
+    "position": "SF",
+    "games_played": 24,
+    "points": 2.7,
+    "rebounds": 1.5,
+    "assists": 0.5,
+    "threes": 0.3,
+    "minutes": 7.7
+  },
+  "Rasheer Fleming": {
+    "team": "PHO",
+    "position": "PF",
+    "games_played": 24,
+    "points": 2.6,
+    "rebounds": 1.3,
+    "assists": 0.2,
+    "threes": 0.3,
+    "minutes": 7.0
+  },
+  "Kevon Looney": {
+    "team": "NOP",
+    "position": "C",
+    "games_played": 16,
+    "points": 2.6,
+    "rebounds": 5.0,
+    "assists": 1.6,
+    "threes": 0.1,
+    "minutes": 14.2
+  },
+  "Leonard Miller": {
+    "team": "MIN",
+    "position": "SF",
+    "games_played": 17,
+    "points": 2.6,
+    "rebounds": 1.4,
+    "assists": 0.3,
+    "threes": 0.1,
+    "minutes": 5.1
+  },
+  "Xavier Tillman Sr.": {
+    "team": "BOS",
+    "position": "C",
+    "games_played": 12,
+    "points": 2.6,
+    "rebounds": 2.1,
+    "assists": 0.4,
+    "threes": 0.3,
+    "minutes": 9.0
+  },
+  "Dorian Finney-Smith": {
+    "team": "HOU",
+    "position": "PF",
+    "games_played": 10,
+    "points": 2.5,
+    "rebounds": 2.9,
+    "assists": 0.5,
+    "threes": 0.7,
+    "minutes": 15.5
+  },
+  "Caleb Martin": {
+    "team": "DAL",
+    "position": "SF",
+    "games_played": 36,
+    "points": 2.5,
+    "rebounds": 1.9,
+    "assists": 1.4,
+    "threes": 0.1,
+    "minutes": 11.3
+  },
+  "Hunter Tyson": {
+    "team": "DEN",
+    "position": "PF",
+    "games_played": 16,
+    "points": 2.5,
+    "rebounds": 1.6,
+    "assists": 0.6,
+    "threes": 0.4,
+    "minutes": 6.9
+  },
+  "Yang Hansen": {
+    "team": "POR",
+    "position": "C",
+    "games_played": 24,
+    "points": 2.4,
+    "rebounds": 1.7,
+    "assists": 0.8,
+    "threes": 0.2,
+    "minutes": 8.3
+  },
+  "Elijah Harkless": {
+    "team": "UTA",
+    "position": "SG",
+    "games_played": 7,
+    "points": 2.4,
+    "rebounds": 0.9,
+    "assists": 0.7,
+    "threes": 0.3,
+    "minutes": 9.4
+  },
+  "Jordan McLaughlin": {
+    "team": "SAS",
+    "position": "PG",
+    "games_played": 17,
+    "points": 2.4,
+    "rebounds": 0.6,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 6.2
+  },
+  "Chris Boucher": {
+    "team": "BOS",
+    "position": "PF",
+    "games_played": 8,
+    "points": 2.3,
+    "rebounds": 2.3,
+    "assists": 0.4,
+    "threes": 0.1,
+    "minutes": 11.4
+  },
+  "Caleb Houstan": {
+    "team": "ATL",
+    "position": "SF",
+    "games_played": 10,
+    "points": 2.3,
+    "rebounds": 0.5,
+    "assists": 0.2,
+    "threes": 0.6,
+    "minutes": 4.9
+  },
+  "Kevin McCullar Jr.": {
+    "team": "NYK",
+    "position": "SF",
+    "games_played": 12,
+    "points": 2.3,
+    "rebounds": 1.7,
+    "assists": 1.3,
+    "threes": 0.5,
+    "minutes": 7.3
+  },
+  "Pete Nance": {
+    "team": "MIL",
+    "position": "PF",
+    "games_played": 11,
+    "points": 2.3,
+    "rebounds": 0.7,
+    "assists": 0.2,
+    "threes": 0.5,
+    "minutes": 4.3
+  },
+  "Luke Travers": {
+    "team": "CLE",
+    "position": "SG",
+    "games_played": 12,
+    "points": 2.3,
+    "rebounds": 2.0,
+    "assists": 0.8,
+    "threes": 0.1,
+    "minutes": 8.6
+  },
+  "Christian Koloko": {
+    "team": "2TM",
+    "position": "C",
+    "games_played": 13,
+    "points": 2.2,
+    "rebounds": 3.5,
+    "assists": 0.8,
+    "threes": 0.0,
+    "minutes": 15.5
+  },
+  "Ron Harper Jr.": {
+    "team": "BOS",
+    "position": "SF",
+    "games_played": 5,
+    "points": 2.2,
+    "rebounds": 1.2,
+    "assists": 0.8,
+    "threes": 0.6,
+    "minutes": 5.2
+  },
+  "Lindy Waters III": {
+    "team": "SAS",
+    "position": "SG",
+    "games_played": 25,
+    "points": 2.2,
+    "rebounds": 0.8,
+    "assists": 0.4,
+    "threes": 0.6,
+    "minutes": 7.3
+  },
+  "JD Davison": {
+    "team": "HOU",
+    "position": "PG",
+    "games_played": 19,
+    "points": 2.1,
+    "rebounds": 0.8,
+    "assists": 1.1,
+    "threes": 0.3,
+    "minutes": 7.3
+  },
+  "Jeff Green": {
+    "team": "HOU",
+    "position": "PF",
+    "games_played": 15,
+    "points": 2.1,
+    "rebounds": 0.5,
+    "assists": 0.1,
+    "threes": 0.5,
+    "minutes": 4.4
+  },
+  "Johnny Juzang": {
+    "team": "MIN",
+    "position": "SG",
+    "games_played": 17,
+    "points": 2.1,
+    "rebounds": 0.8,
+    "assists": 0.4,
+    "threes": 0.3,
+    "minutes": 3.9
+  },
+  "Maxi Kleber": {
+    "team": "LAL",
+    "position": "PF",
+    "games_played": 20,
+    "points": 2.1,
+    "rebounds": 1.9,
+    "assists": 0.7,
+    "threes": 0.2,
+    "minutes": 11.5
+  },
+  "Koby Brea": {
+    "team": "PHO",
+    "position": "SG",
+    "games_played": 2,
+    "points": 2.0,
+    "rebounds": 0.5,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 4.0
+  },
+  "Carter Bryant": {
+    "team": "SAS",
+    "position": "PF",
+    "games_played": 32,
+    "points": 2.0,
+    "rebounds": 1.7,
+    "assists": 0.2,
+    "threes": 0.3,
+    "minutes": 7.8
+  },
+  "Amir Coffey": {
+    "team": "MIL",
+    "position": "SG",
+    "games_played": 24,
+    "points": 2.0,
+    "rebounds": 0.8,
+    "assists": 0.3,
+    "threes": 0.2,
+    "minutes": 7.8
+  },
+  "Hunter Dickinson": {
+    "team": "NOP",
+    "position": "C",
+    "games_played": 1,
+    "points": 2.0,
+    "rebounds": 0.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 5.0
+  },
+  "Trentyn Flowers": {
+    "team": "CHI",
+    "position": "SF",
+    "games_played": 2,
+    "points": 2.0,
+    "rebounds": 0.5,
+    "assists": 0.5,
+    "threes": 0.0,
+    "minutes": 3.0
+  },
+  "Colby Jones": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 1,
+    "points": 2.0,
+    "rebounds": 4.0,
+    "assists": 2.0,
+    "threes": 0.0,
+    "minutes": 7.0
+  },
+  "Isaiah Livers": {
+    "team": "PHO",
+    "position": "PF",
+    "games_played": 22,
+    "points": 2.0,
+    "rebounds": 2.0,
+    "assists": 0.6,
+    "threes": 0.5,
+    "minutes": 10.5
+  },
+  "Wendell Moore Jr.": {
+    "team": "DET",
+    "position": "SG",
+    "games_played": 3,
+    "points": 2.0,
+    "rebounds": 1.3,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 14.3
+  },
+  "Daeqwon Plowden": {
+    "team": "SAC",
+    "position": "SG",
+    "games_played": 1,
+    "points": 2.0,
+    "rebounds": 2.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 14.0
+  },
+  "Oscar Tshiebwe": {
+    "team": "UTA",
+    "position": "C",
+    "games_played": 1,
+    "points": 2.0,
+    "rebounds": 6.0,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 15.0
+  },
+  "Jahmir Young": {
+    "team": "MIA",
+    "position": "PG",
+    "games_played": 5,
+    "points": 2.0,
+    "rebounds": 0.4,
+    "assists": 0.8,
+    "threes": 0.4,
+    "minutes": 4.8
+  },
+  "Kam Jones": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 11,
+    "points": 1.9,
+    "rebounds": 0.7,
+    "assists": 0.8,
+    "threes": 0.1,
+    "minutes": 7.5
+  },
+  "Mason Plumlee": {
+    "team": "CHO",
+    "position": "C",
+    "games_played": 14,
+    "points": 1.9,
+    "rebounds": 2.9,
+    "assists": 1.1,
+    "threes": 0.0,
+    "minutes": 8.9
+  },
+  "Mohamed Diawara": {
+    "team": "NYK",
+    "position": "SF",
+    "games_played": 34,
+    "points": 1.8,
+    "rebounds": 1.0,
+    "assists": 0.5,
+    "threes": 0.4,
+    "minutes": 5.1
+  },
+  "Andre Jackson Jr.": {
+    "team": "MIL",
+    "position": "SG",
+    "games_played": 17,
+    "points": 1.8,
+    "rebounds": 0.8,
+    "assists": 1.1,
+    "threes": 0.2,
+    "minutes": 6.9
+  },
+  "E.J. Liddell": {
+    "team": "BRK",
+    "position": "PF",
+    "games_played": 8,
+    "points": 1.8,
+    "rebounds": 1.1,
+    "assists": 0.0,
+    "threes": 0.3,
+    "minutes": 4.4
+  },
+  "Cody Martin": {
+    "team": "IND",
+    "position": "SF",
+    "games_played": 4,
+    "points": 1.8,
+    "rebounds": 3.5,
+    "assists": 0.5,
+    "threes": 0.0,
+    "minutes": 13.8
+  },
+  "Orlando Robinson": {
+    "team": "ORL",
+    "position": "C",
+    "games_played": 4,
+    "points": 1.8,
+    "rebounds": 1.0,
+    "assists": 0.8,
+    "threes": 0.3,
+    "minutes": 6.3
+  },
+  "Thanasis Antetokounmpo": {
+    "team": "MIL",
+    "position": "SF",
+    "games_played": 13,
+    "points": 1.7,
+    "rebounds": 0.5,
+    "assists": 0.1,
+    "threes": 0.0,
+    "minutes": 3.1
+  },
+  "Harrison Ingram": {
+    "team": "SAS",
+    "position": "SF",
+    "games_played": 3,
+    "points": 1.7,
+    "rebounds": 1.0,
+    "assists": 0.0,
+    "threes": 0.3,
+    "minutes": 3.7
+  },
+  "AJ Johnson": {
+    "team": "WAS",
+    "position": "SG",
+    "games_played": 23,
+    "points": 1.7,
+    "rebounds": 1.1,
+    "assists": 0.6,
+    "threes": 0.2,
+    "minutes": 7.1
+  },
+  "Taelon Peter": {
+    "team": "IND",
+    "position": "SG",
+    "games_played": 22,
+    "points": 1.7,
+    "rebounds": 1.0,
+    "assists": 0.7,
+    "threes": 0.5,
+    "minutes": 6.3
+  },
+  "Chris Youngblood": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 27,
+    "points": 1.7,
+    "rebounds": 0.9,
+    "assists": 0.3,
+    "threes": 0.4,
+    "minutes": 5.2
+  },
+  "Ariel Hukporti": {
+    "team": "NYK",
+    "position": "C",
+    "games_played": 27,
+    "points": 1.6,
+    "rebounds": 2.7,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 9.2
+  },
+  "Jacob Toppin": {
+    "team": "ATL",
+    "position": "SF",
+    "games_played": 5,
+    "points": 1.6,
+    "rebounds": 0.2,
+    "assists": 0.2,
+    "threes": 0.0,
+    "minutes": 3.4
+  },
+  "Tyson Etienne": {
+    "team": "BRK",
+    "position": "PG",
+    "games_played": 8,
+    "points": 1.5,
+    "rebounds": 0.0,
+    "assists": 0.1,
+    "threes": 0.5,
+    "minutes": 4.3
+  },
+  "Anthony Gill": {
+    "team": "WAS",
+    "position": "PF",
+    "games_played": 19,
+    "points": 1.5,
+    "rebounds": 0.8,
+    "assists": 0.0,
+    "threes": 0.2,
+    "minutes": 3.8
+  },
+  "Bronny James": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 23,
+    "points": 1.5,
+    "rebounds": 0.4,
+    "assists": 1.1,
+    "threes": 0.3,
+    "minutes": 7.1
+  },
+  "Brooks Barnhizer": {
+    "team": "OKC",
+    "position": "SG",
+    "games_played": 21,
+    "points": 1.4,
+    "rebounds": 1.8,
+    "assists": 0.4,
+    "threes": 0.0,
+    "minutes": 7.6
+  },
+  "Johni Broome": {
+    "team": "PHI",
+    "position": "C",
+    "games_played": 7,
+    "points": 1.4,
+    "rebounds": 1.9,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 5.7
+  },
+  "Javonte Cooke": {
+    "team": "POR",
+    "position": "SG",
+    "games_played": 7,
+    "points": 1.4,
+    "rebounds": 1.0,
+    "assists": 1.0,
+    "threes": 0.3,
+    "minutes": 6.4
+  },
+  "Nigel Hayes-Davis": {
+    "team": "PHO",
+    "position": "SF",
+    "games_played": 23,
+    "points": 1.4,
+    "rebounds": 1.3,
+    "assists": 0.3,
+    "threes": 0.1,
+    "minutes": 7.8
+  },
+  "Isaac Jones": {
+    "team": "2TM",
+    "position": "PF",
+    "games_played": 4,
+    "points": 1.3,
+    "rebounds": 0.5,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 4.5
+  },
+  "Khaman Maluach": {
+    "team": "PHO",
+    "position": "C",
+    "games_played": 18,
+    "points": 1.3,
+    "rebounds": 1.0,
+    "assists": 0.2,
+    "threes": 0.0,
+    "minutes": 4.7
+  },
+  "Jonathan Mogbo": {
+    "team": "TOR",
+    "position": "PF",
+    "games_played": 16,
+    "points": 1.3,
+    "rebounds": 1.2,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 5.3
+  },
+  "Adou Thiero": {
+    "team": "LAL",
+    "position": "SF",
+    "games_played": 15,
+    "points": 1.3,
+    "rebounds": 1.2,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 5.8
+  },
+  "Trey Jemison": {
+    "team": "NYK",
+    "position": "C",
+    "games_played": 6,
+    "points": 1.2,
+    "rebounds": 1.7,
+    "assists": 0.2,
+    "threes": 0.0,
+    "minutes": 6.3
+  },
+  "Kyle Lowry": {
+    "team": "PHI",
+    "position": "PG",
+    "games_played": 6,
+    "points": 1.0,
+    "rebounds": 0.5,
+    "assists": 1.2,
+    "threes": 0.3,
+    "minutes": 7.5
+  },
+  "Hunter Sallis": {
+    "team": "PHI",
+    "position": "SG",
+    "games_played": 7,
+    "points": 1.0,
+    "rebounds": 0.1,
+    "assists": 0.6,
+    "threes": 0.0,
+    "minutes": 3.7
+  },
+  "Dario \u00c5\u00a0ari\u00c4\u0087": {
+    "team": "SAC",
+    "position": "C",
+    "games_played": 5,
+    "points": 1.0,
+    "rebounds": 1.2,
+    "assists": 0.4,
+    "threes": 0.2,
+    "minutes": 8.2
+  },
+  "Jahmai Mashack": {
+    "team": "MEM",
+    "position": "SG",
+    "games_played": 7,
+    "points": 0.9,
+    "rebounds": 0.7,
+    "assists": 0.3,
+    "threes": 0.3,
+    "minutes": 3.6
+  },
+  "Amari Williams": {
+    "team": "BOS",
+    "position": "PF",
+    "games_played": 7,
+    "points": 0.9,
+    "rebounds": 1.6,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 6.1
+  },
+  "Bismack Biyombo": {
+    "team": "SAS",
+    "position": "C",
+    "games_played": 11,
+    "points": 0.8,
+    "rebounds": 0.6,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 5.9
+  },
+  "N'Faly Dante": {
+    "team": "ATL",
+    "position": "C",
+    "games_played": 4,
+    "points": 0.8,
+    "rebounds": 1.8,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 3.8
+  },
+  "Curtis Jones": {
+    "team": "DEN",
+    "position": "SG",
+    "games_played": 5,
+    "points": 0.8,
+    "rebounds": 0.8,
+    "assists": 0.2,
+    "threes": 0.0,
+    "minutes": 4.4
+  },
+  "Drew Peterson": {
+    "team": "CHO",
+    "position": "PF",
+    "games_played": 6,
+    "points": 0.8,
+    "rebounds": 1.5,
+    "assists": 0.3,
+    "threes": 0.0,
+    "minutes": 10.7
+  },
+  "Pacome Dadiet": {
+    "team": "NYK",
+    "position": "SG",
+    "games_played": 16,
+    "points": 0.5,
+    "rebounds": 0.7,
+    "assists": 0.4,
+    "threes": 0.0,
+    "minutes": 3.0
+  },
+  "Joe Ingles": {
+    "team": "MIN",
+    "position": "SF",
+    "games_played": 13,
+    "points": 0.5,
+    "rebounds": 0.4,
+    "assists": 0.8,
+    "threes": 0.1,
+    "minutes": 4.2
+  },
+  "Lachlan Olbrich": {
+    "team": "CHI",
+    "position": "C",
+    "games_played": 8,
+    "points": 0.5,
+    "rebounds": 2.4,
+    "assists": 0.9,
+    "threes": 0.0,
+    "minutes": 8.3
+  },
+  "Garrett Temple": {
+    "team": "TOR",
+    "position": "SG",
+    "games_played": 10,
+    "points": 0.4,
+    "rebounds": 0.4,
+    "assists": 0.3,
+    "threes": 0.1,
+    "minutes": 2.9
+  },
+  "Jahmyl Telfort": {
+    "team": "LAC",
+    "position": "PF",
+    "games_played": 8,
+    "points": 0.1,
+    "rebounds": 0.4,
+    "assists": 0.1,
+    "threes": 0.0,
+    "minutes": 4.0
+  },
+  "Mo Bamba": {
+    "team": "TOR",
+    "position": "C",
+    "games_played": 2,
+    "points": 0.0,
+    "rebounds": 1.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 3.0
+  },
+  "Sharife Cooper": {
+    "team": "WAS",
+    "position": "PG",
+    "games_played": 4,
+    "points": 0.0,
+    "rebounds": 0.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 2.5
+  },
+  "Isaiah Crawford": {
+    "team": "HOU",
+    "position": "SF",
+    "games_played": 2,
+    "points": 0.0,
+    "rebounds": 0.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 2.5
+  },
+  "Noa Essengue": {
+    "team": "CHI",
+    "position": "PF",
+    "games_played": 2,
+    "points": 0.0,
+    "rebounds": 0.0,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 3.0
+  },
+  "Tosan Evbuomwan": {
+    "team": "NYK",
+    "position": "SF",
+    "games_played": 5,
+    "points": 0.0,
+    "rebounds": 0.4,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 1.6
+  },
+  "Vladislav Goldin": {
+    "team": "MIA",
+    "position": "C",
+    "games_played": 1,
+    "points": 0.0,
+    "rebounds": 0.0,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 1.0
+  },
+  "Chucky Hepburn": {
+    "team": "TOR",
+    "position": "PG",
+    "games_played": 2,
+    "points": 0.0,
+    "rebounds": 0.5,
+    "assists": 1.0,
+    "threes": 0.0,
+    "minutes": 6.5
+  },
+  "Chris Ma\u00c3\u00b1on": {
+    "team": "LAL",
+    "position": "SG",
+    "games_played": 4,
+    "points": 0.0,
+    "rebounds": 0.8,
+    "assists": 0.0,
+    "threes": 0.0,
+    "minutes": 3.5
+  }
+}
